@@ -16,6 +16,7 @@ header {
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
+    height: 700px;
 }
 
 ul {
@@ -63,7 +64,7 @@ nav {
     padding-bottom: 32px;
     padding-top: 32px;
     background-image:url(../images/plants/tipsBG.png);
-    height: 654px;
+    height: 700px;
 }
 
 #shop-section {
@@ -71,7 +72,7 @@ nav {
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
-    height: 654px;
+    height: 700px;
     background-color: aqua;
 }
 
@@ -80,7 +81,7 @@ nav {
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
-    height: 654px;
+    height: 700px;
     background-image:url(../images/plants/quoteBG.png);
 }
 
@@ -89,17 +90,8 @@ nav {
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
-    height: 654px;
+    height: 700px;
     background-color: rgb(194, 194, 194);
-}
-
-#arrivals-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    height: 654px;
-    background-color: rgb(255, 98, 98);
 }
 
 #bedroom-section {
@@ -107,8 +99,32 @@ nav {
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
-    height: 654px;
+    height: 700px;
     background-color: rgb(235, 255, 181);
+}
+
+#arrivals-section {
+    background: linear-gradient(180deg, rgb(216, 216, 216) 50%, rgb(233, 229, 229) 50%);
+    padding: 84px 136px;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+
+#layer-container {
+    position: relative;
+    width: 100%;
+}
+
+#plant-info {
+    position: relative;
+    top: -116%;                      
+    left: 10%;
+    background: white;
+    transform: translateY(1px);
+    width: 250px;
+    height: 500px;
+    padding: 36px 28px 16px 28px;
 }
 
 footer {
