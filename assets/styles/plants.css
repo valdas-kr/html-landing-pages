@@ -73,7 +73,7 @@ nav {
     padding-bottom: 32px;
     padding-top: 32px;
     height: 700px;
-    background-color: aqua;
+    background-color: rgb(235, 255, 255);
 }
 
 #quote-section {
@@ -89,18 +89,15 @@ nav {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 32px;
-    padding-top: 32px;
     height: 700px;
-    background-color: rgb(194, 194, 194);
+    background: linear-gradient(180deg, rgb(196, 226, 255) 70%, rgb(235, 249, 255) 30%);
 }
 
 #bedroom-section {
     padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 32px;
-    padding-top: 32px;
     height: 700px;
-    background-color: rgb(235, 255, 181);
+    background-color: rgb(181, 255, 166);
 }
 
 #arrivals-section {
@@ -129,5 +126,25 @@ nav {
 
 footer {
     background-color: black;
-    height: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+#shop-button {
+    color: white; 
+    background-color: rgb(1, 199, 1); 
+    padding: 8px 12px 8px 12px;
+    border: 0px;
+    border-radius: 16px;
+}
+
+#shop-button:hover {
+    color: rgb(255, 255, 255); 
+    background-color: rgb(17, 146, 17); 
+    padding: 8px 12px 8px 12px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    border-radius: 16px;
 }
