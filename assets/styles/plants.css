@@ -1,5 +1,6 @@
 header {
-    background-image: url(../images/plants/headerBG.png);
+    background-image: url(../images/plants/header.png);
+    background-position: center;
 }
 
 header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
@@ -38,7 +39,7 @@ nav {
 }
 
 #header-text-container-1 {
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
     padding-top: 64px;
@@ -53,7 +54,7 @@ nav {
 }
 
 #tips-section {
-    background-image:url(../images/plants/tipsBG.png);
+    background-image:url(../images/plants/quote.png);
 }
 
 #shop-section {
@@ -61,7 +62,7 @@ nav {
 }
 
 #quote-section {
-    background-image:url(../images/plants/quoteBG.png);
+    background-image:url(../images/plants/tips.png);
 }
 
 #care-section {
