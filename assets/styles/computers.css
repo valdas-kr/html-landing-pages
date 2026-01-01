@@ -26,6 +26,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     letter-spacing: 2px;
+    padding-bottom: 16px;
 }
 
 #header-carousel {
@@ -48,11 +49,6 @@ nav {
     background-color: black;
 }
 
-#video-section {
-    background-color: rgb(49, 49, 49);
-    color: white;
-}
-
 #video-section, #partners-section, #qualities-section, #staff-section, #gallery-section, footer {
     padding: 64px 128px 64px 128px;
 }
@@ -62,20 +58,113 @@ nav {
     color: white;
 }
 
-#qualities-section {
-    background-color: rgb(255, 225, 200);
+footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
 }
 
-#staff-section {
-    background-color: rgb(200, 201, 255);
+#header-divider {
+    color: white;
+}
+
+#carousel-img-container {
+    display: flex; flex-direction: column; width: 48%; justify-content: center;
+}
+
+#carousel-img {
+    width: 100%; 
+}
+
+#carousel-text-container {
+    display: flex; flex-direction: column; width: 48%;
+}
+
+#carousel-header-text {
+    font-size: 38px; font-weight: 700;
+}
+
+#carousel-text {
+    font-size: 18px;
+}
+
+#quote-header-text {
+    font-size: 32px;
+}
+
+#quote-text {
+    font-size: 18px;
+}
+
+#qualities-section {
+    background-color: rgb(255, 225, 200);
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+
+.qualities-card-container {
+    width: 25%; display: flex; flex-direction: column; margin: auto;
+}
+
+.staff-card-img-container {
+    border-radius: 50%; display: inline-block; background-color: black; height: 200px; width: 200px; align-self: center; position: relative;
+}
+
+.qualities-card-img-container {
+    border-radius: 50%; display: inline-block; background-color: black; height: 100px; width: 100px; align-self: center;
+}
+
+.qualities-card-text-container {
+    padding-top: 24px; text-align: center;
+}
+
+.qualities-card-header-text {
+    font-size: 24px;
+}
+
+.qualities-card-text {
+    font-size: 16px; padding-top: 18px;
 }
 
 #gallery-section {
     background-color: rgb(227, 255, 200);
     text-align: center;
+    display: flex; flex-direction: column; row-gap: 16px;
 }
 
-footer {
+#gallery-header-text {
+    font-size: 36px; font-weight: 800;
+}
+
+#gallery-text {
+    font-size: 20px;
+}
+
+#gallery-img-container {
+    display: flex; flex-direction: row; column-gap: 32px; column-width: 200px; padding-top: 32px;
+}
+
+.gallery-img {
+    height: 200px; width: 100%; border-radius: 8px;
+}
+
+#staff-section {
+    background-color: rgb(200, 201, 255);
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+
+#video-section {
     background-color: rgb(49, 49, 49);
     color: white;
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+
+#video-img-container {
+    display: flex; flex-direction: column; width: 52%; height: 350px;
+}
+
+#video-img {
+    height: 100%; width: 100%; border-radius: 8px; 
+}
+
+#video-text-container {
+    display: flex; flex-direction: column; width: 43%; justify-content: space-between;
 }

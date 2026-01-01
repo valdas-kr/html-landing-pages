@@ -9,182 +9,103 @@
     <body>
         <header>
             <nav>
-                <a href="../index.html" id="logo">
-                    <img src="../assets/icons/logos/plants_logo.svg" style="width: 200px; " alt="Website logo with a plant and website name"/>
-                </a>
+                <a href="../index.html"> <img src="../assets/icons/logos/plants_logo.svg" class="logo" alt="Website logo with a plant and website name"/> </a>
                 <ul>
-                    <li>
-                        <a href="#Home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#Explore">EXPLORE</a>
-                    </li>
-                    <li>
-                        <a href="#Special Plans">SPECIAL PLANS</a>
-                    </li>
-                    <li>
-                        <a href="#About Us">ABOUT US</a>
-                    </li>
+                    <li> <a href="../src/travel.html"> TRAVEL </a> </li>
+                    <li> <a href="../src/plants.html"> PLANTS </a> </li>
+                    <li> <a href="../src/blogs.html"> BLOGS </a> </li>
+                    <li> <a href="../src/computers.html"> COMPUTERS </a> </li>
                 </ul>
             </nav>
-            <div id="header-text-container-1">
-                <div>
-                    <p style="font-size: 28px;">
-                        plant Lover & co.
-                    </p>
-                    <p style="font-size: 78px; ">
-                        <strong>
-                            HOUSE <br> PLANTS
-                        </strong>
-                    </p>
-                    <p style="letter-spacing: 2px; font-size: 42px;">
-                        care guide
-                    </p>
+            <section id="header-text-container">
+                <p id="header-medium-text"> plant Lover & co. </p>
+                <p id="header-big-text"> HOUSE PLANTS </p>
+                <p id="header-medium-text"> care guide </p>
+                <hr id="header-divider">
+                <p id="header-small-text"> Easy, hassle-free, steps to ensure that your beloved plants stay happy and evergreen indoors </p>
+                <div id="header-icons-container">
+                    <img src="../assets/icons/plants/sun_icon.svg" class="icon" />
+                    <img src="../assets/icons/plants/cloud_icon.svg" class="icon" />
+                    <img src="../assets/icons/plants/water_icon.svg" class="icon" />
                 </div>
-            </div>
-            <div id="header-text-container-2">
-                <div style="width: 40%;">
-                    <hr style="width: 30%; color: #d45b23; ">
-                    <p style="font-size: 22px; padding-top: 16px;">
-                        Easy, hassle-free, steps to ensure that your beloved plants stay happy and evergreen indoors
-                    </p>
-                    <div style="display: flex; column-gap: 14px; flex-direction: row; padding-top: 16px;">
-                        <img src="../assets/icons/plants/sun_icon.svg" class="icon" />
-                        <img src="../assets/icons/plants/cloud_icon.svg" class="icon" />
-                        <img src="../assets/icons/plants/water_icon.svg" class="icon" />
-                    </div>
-                </div>
-            </div>
+            </section>
         </header>
         
         <section id="tips-section">
-            <div style="padding-top: 25%; display: flex; flex-direction: column; align-items: start;">
-                <div style="width: 40%; text-align: right;">
-                    <p style="color: white; font-size: 48px; ">
-                        Keep your plants healthy and happy
-                    </p>
-                    <p style="color: white; font-size: 26px; padding-top: 32px; ">
-                        With these 7 tips
-                    </p>
-                    <p style="color: #adadad; font-size: 22px; padding-top: 18px; ">
-                        You never know that will change the way you care for your plants forever
-                    </p>
-                </div>
+            <div id="tips-text-container">
+                <p id="tips-big-text"> Keep your plants healthy and happy </p>
+                <p id="tips-medium-text"> With these 7 tips </p>
+                <p id="tips-small-text"> You never know that will change the way you care for your plants forever </p>
             </div>
         </section>
 
         <section id="quote-section">
-            <div style="padding-top: 20%; display: flex; flex-direction: column; align-items: end;">
-                <div style="width: 50%; display: flex; flex-direction: column;">
-                    <p style="color: rgb(207, 207, 207); font-size: 64px; text-align: left;">
-                        Life is too short,
-                        buy more & more
-                        houseplants 
-                        <img src="../assets/icons/plants/plant_icon.svg" class="big-icon" />
-                    </p>
-                </div>
+            <div id="quote-text-container">
+                <p id="quote-text">
+                    Life is too short, buy more & more houseplants 
+                    <img src="../assets/icons/plants/plant_icon.svg" class="big-icon" alt="" />
+                </p>
             </div>
         </section>
         
         <section id="arrivals-section">
             <div id="layer-container">
-                <div style="width: 100%; height: 100%; background-image: url(../assets/images/plants/arrivals.png); border-radius: 16px;"> </div>
-                <div id="plant-info">
-                    <p style="font-size: 38px; font-weight: 700;">
-                        NEW ARRIVALS
-                    </p>
-                    <div style="padding-top: 16px;" >
+                <div id="arrivals-img"> </div>
+                <div id="arrivals-info">
+                    <div id="arrivals-habits-info" >
+                        <p id="arrivals-title-text"> NEW ARRIVALS </p>
                         <hr>
-                    </div>
-                    <p style="font-size: 36px; padding-top: 16px; ">
-                        Agave
-                    </p>
-                    <div style="padding-top: 16px; display: flex; flex-direction: column; gap: 16px;" >
-                        <div style="display: flex; flex-direction: row; column-gap: 10px">
-                            <img src="../assets/icons/plants/sun_icon.svg" class="icon"/>
-                            <p style="font-size: 18px; ">
-                                full sun
-                            </p>
+                        <p id="arrivals-big-text"> Agave </p>
+                        <div class="arrivals-row-container">
+                            <img src="../assets/icons/plants/sun_icon.svg" class="icon" alt="" />
+                            <p class="arrivals-small-text"> full sun </p>
                         </div>
-                        <div style="display: flex; flex-direction: row; column-gap: 10px">
-                            <img src="../assets/icons/plants/water_icon.svg" class="icon"/>
-                            <p style="font-size: 18px; ">
-                            water every 7 days
-                            </p>
+                        <div class="arrivals-row-container">
+                            <img src="../assets/icons/plants/water_icon.svg" class="icon" alt="" />
+                            <p class="arrivals-small-text"> water every 7 days </p>
                         </div>
                     </div>
-                    <div style="padding-top: 70%;">
-                        <p style="font-size: 24px;">
-                            15-25 inches
-                        </p>
-                        <div style="padding-top: 6px;">
-                            <hr>
-                        </div>
-                        <p style="font-size: 18px; padding-top: 4px;">
-                            Agave, century plant
-                        </p>
+                    <div id="arrivals-additional-info">
+                        <p class="arrivals-medium-text"> 15-25 inches </p>
+                        <hr>
+                        <p class="arrivals-small-text"> Agave, century plant </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="shop-section">
-            <div style="padding-top: 20px; display: flex; flex-direction: column;">
-                <div>
-                    <p style="font-size: 42px;">
-                        Best selling
-                    </p>
-                    <p style="font-size: 80px; color: green;">
-                        Indoor plants
-                    </p>
-                </div>
-                <div style="display: flex; flex-direction: row; padding-top: 50px; justify-content: space-between; ">
-                    <div style="width: 30%;">
-                        <p style="font-size: 20px;">
-                            Low-maintenance houseplants
-                            that are easy to care for
-                        </p>
-                    </div>
-                    <button id="shop-button" onclick="">ONLINE SHOP</button>
-                </div>
-                <div style="padding-top: 36px; display: flex; flex-direction: row; justify-content: space-between;">
-                    <div style="width: 25%; border: 1px solid rgb(187, 54, 54); border-radius: 16px; background-color: #a6ffe9; box-shadow: 10px 12px #70ffdb;">
-                        <div style="padding: 12px;">
-                            <img src="../assets/images/plants/shop_1.png" style="width: 100%; border-radius: 16px;"/>
-                            <div style="padding-top: 12px; display: flex; flex-direction: row; justify-content: space-between;">
-                                <p style="font-size: 18px;">
-                                    Banana plant
-                                </p>
-                                <p style="font-size: 16px;">
-                                    10$
-                                </p>
-                            </div>
+            <p id="shop-header-small-text"> Best selling </p>
+            <p id="shop-header-large-text"> Indoor plants </p>
+            <div id="shop-subheader-container">
+                <p style="font-size: 20px;"> Low-maintenance houseplants <br> that are easy to care for </p>
+                <button id="shop-button" onclick=""> ONLINE SHOP </button>
+            </div>
+            <div id="shop-items-container">
+                <div class="shop-item">
+                    <div class="shop-item-inner">
+                        <img src="../assets/images/plants/shop_1.png" class="shop-item-img" alt=""/>
+                        <div class="shop-item-text-container">
+                            <p class="shop-item-text"> Banana plant </p>
+                            <p class="shop-item-text"> 10$ </p>
                         </div>
                     </div>
-                    <div style="width: 25%; border: 1px solid rgb(187, 54, 54); border-radius: 16px; background-color: #a6ffe9; box-shadow: 10px 12px #70ffdb;">
-                        <div style="padding: 12px;">
-                            <img src="../assets/images/plants/shop_2.png" style="width: 100%;  border-radius: 16px;"/>
-                            <div style="padding-top: 12px; display: flex; flex-direction: row; justify-content: space-between;">
-                                <p style="font-size: 18px;">
-                                    Aloe vera
-                                </p>
-                                <p style="font-size: 16px;">
-                                    25$
-                                </p>
-                            </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-inner">
+                        <img src="../assets/images/plants/shop_2.png" class="shop-item-img" alt=""/>
+                        <div class="shop-item-text-container">
+                            <p class="shop-item-text"> Aloe vera </p>
+                            <p class="shop-item-text"> 25$ </p>
                         </div>
                     </div>
-                    <div style="width: 25%; border: 1px solid rgb(187, 54, 54); border-radius: 16px; background-color: #a6ffe9; box-shadow: 10px 12px #70ffdb;">
-                        <div style="padding: 12px;">
-                            <img src="../assets/images/plants/shop_3.png" style="width: 100%;  border-radius: 16px;"/>
-                            <div style="padding-top: 12px; display: flex; flex-direction: row; justify-content: space-between;">
-                                <p style="font-size: 18px;">
-                                    Begonia
-                                </p>
-                                <p style="font-size: 16px;">
-                                    15$
-                                </p>
-                            </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-inner">
+                        <img src="../assets/images/plants/shop_3.png" class="shop-item-img" alt=""/>
+                        <div class="shop-item-text-container">
+                            <p class="shop-item-text"> Begonia </p>
+                            <p class="shop-item-text"> 15$ </p>
                         </div>
                     </div>
                 </div>
@@ -192,101 +113,63 @@
         </section>
 
         <section id="care-section">
-            <div style="height: 72%; display: flex; flex-direction: row;">
-                <div style="display: flex; flex-direction: row; align-items:end;">
-                    <p style="font-size: 78px; letter-spacing: 2px; ">
-                        Monstera
-                    </p>
+            <div id="care-header-container">
+                <div id="care-header-text-container">
+                    <p id="care-header-text"> Monstera </p>
                 </div>
-                <div style="margin-left: auto; display: block; ">
-                    <img src="../assets/images/plants/care.png" style="height: 500px;" />
+                <div id="care-header-img-container">
+                    <img src="../assets/images/plants/care.png" alt="" id="care-img" />
                 </div>
             </div>
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div style="width: 35%;">
-                    <p style="font-size: 48px;">
-                        plant care
-                    </p>
+            <div id="care-info-container">
+                <p id="care-plant-care"> plant care </p>
+
+                <div class="care-detailed-info-container">
+                    <img src="../assets/icons/plants/sun_care_icon.svg" alt="" class="big-icon"/>
+                    <p class="care-detailed-info-header"> LIGHT </p>
+                    <p class="care-detailed-info-text"> I love light! Give some <br> light but not too bright <br> or too strong. </p>
                 </div>
-                <div style="display: flex; flex-direction: column; width: 20%; align-items: center; text-align: center; padding-top: 36px;">
-                    <img src="../assets/icons/plants/sun_care_icon.svg" class="big-icon"/>
-                    <div style="padding-top: 4px;">
-                        <p style="font-size: 18px;">
-                            LIGHT
-                        </p>
-                        <p style="padding-top: 12px; font-size: 16px;">
-                            I love light! Give some <br>
-                            light but not too bright <br>
-                            or too strong.
-                        </p>
-                    </div>
+                <div class="care-detailed-info-container">
+                    <img src="../assets/icons/plants/water_care_icon.svg" alt="" class="big-icon"/>
+                    <p class="care-detailed-info-header"> WATER </p>
+                    <p class="care-detailed-info-text">  I love water <br> but only one a week <br> is enough. </p>
                 </div>
-                <div style="display: flex; flex-direction: column; width: 20%; align-items: center; text-align: center; padding-top: 36px;">
-                    <img src="../assets/icons/plants/water_care_icon.svg" class="big-icon"/>
-                    <div style="padding-top: 4px;">
-                        <p style="font-size: 18px;">
-                            WATER
-                        </p>
-                        <p style="padding-top: 12px; font-size: 16px;">
-                            I love water <br>
-                            but only one a week <br>
-                            is enough.
-                        </p>
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: column; width: 20%; align-items: center; text-align: center; padding-top: 36px;">
-                    <img src="../assets/icons/plants/food_icon.svg" class="big-icon"/>
-                    <div style="padding-top: 4px;">
-                        <p style="font-size: 18px;">
-                            FOOD
-                        </p>
-                        <p style="padding-top: 12px; font-size: 16px;">
-                            I'm not greedy, so once <br>
-                            a month is plentiful and will
-                            keep me growing.
-                        </p>
-                    </div>
+                <div class="care-detailed-info-container">
+                    <img src="../assets/icons/plants/food_icon.svg" alt="" class="big-icon"/>
+                    <p class="care-detailed-info-header"> FOOD </p>
+                    <p class="care-detailed-info-text"> I'm not greedy, so once <br> a month is plentiful and will <br> keep me growing. </p>
                 </div>
             </div>
         </section>
 
         <section id="bedroom-section">
-            <div style="display: flex; flex-direction: row; height: 100%;">
-                <div style="display: flex; flex-direction: column; width: 40%; height: 100%;">
-                    <p style="font-size: 72px; padding-top: 50%;">
-                        Bedroom plants
-                        <img src="../assets/icons/plants/plant_icon_2.svg" class="big-icon" />
-                    </p>
-                    <p style="font-size: 24px; padding-top: 24px;">
-                        Your bedroom is your sanctuary,
-                        Incorporate some of these plants to
-                        influence a good night sleep
-                    </p>
+            <div id="bedroom-text-container">
+                <p id="bedroom-big-text"> Bedroom plants <img src="../assets/icons/plants/plant_icon_2.svg" class="big-icon" /> </p>
+                <p id="bedroom-small-text"> Your bedroom is your sanctuary, Incorporate some of these plants to influence a good night sleep </p>
+            </div>
+            <div id="bedroom-img-container">
+                <div id="bedroom-first-image-container">
+                    <img src="../assets/images/plants/bedroom_2.png" alt="" id="bedroom-first-img"/>
                 </div>
-                <div style="display: flex; flex-direction: row; width: 60%; height: 100%;">
-                    <div style="width: 35%; padding-top: 5%; z-index: 2;">
-                        <img src="../assets/images/plants/bedroom_2.png" style="width: 100%; border-radius: 16px;"/>
-                    </div>
-                    <div style="width: 30%; padding-top: 30%; margin-left: -80px; z-index: 1;">
-                        <img src="../assets/images/plants/bedroom_1.png" style="width: 200%; height: 90%; border-radius: 16px;"/>
-                    </div>
-                    <div style="width: 25%; padding-top: 80%; margin-left: 90px; z-index: 3;">
-                        <img src="../assets/images/plants/bedroom_3.png" style="width: 100%; border-radius: 16px;"/>
-                    </div>
+                <div id="bedroom-second-image-container">
+                    <img src="../assets/images/plants/bedroom_1.png" alt="" id="bedroom-second-img"/>
+                </div>
+                <div id="bedroom-third-image-container">
+                    <img src="../assets/images/plants/bedroom_3.png" alt="" id="bedroom-third-img"/>
                 </div>
             </div>
         </section>
 
         <footer>
-            <hr style="width: 30%; border: 1px dashed white; margin: auto;">
-            <div style="display: flex; flex-direction: row; justify-content: space-evenly; padding-top: 24px; text-align: center;">
-                <div style="display: flex; flex-direction: column;">
-                    <a href="#Home" style="text-decoration: none; font-size: 24px; color: wheat;">HOME</a>
-                    <a href="#Explore" style="text-decoration: none; font-size: 24px; color: wheat;">EXPLORE</a>
+            <hr id="footer-divider">
+            <div id="footer-text-container">
+                <div class="footer-column-container">
+                    <a href="#Home" class="footer-text"> HOME </a>
+                    <a href="#Explore" class="footer-text"> EXPLORE </a>
                 </div>
-                <div style="display: flex; flex-direction: column;">
-                    <a href="#Special Plans" style="text-decoration: none; font-size: 24px; color: wheat;" >SPECIAL PLANS</a>
-                    <a href="#About Us" style="text-decoration: none; font-size: 24px; color: wheat;" >ABOUT US</a>
+                <div class="footer-column-container">
+                    <a href="#Special Plans" class="footer-text" > SPECIAL PLANS </a>
+                    <a href="#About Us" class="footer-text"> ABOUT US </a>
                 </div>
             </div>
         </footer>
