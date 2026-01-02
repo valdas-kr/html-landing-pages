@@ -1,166 +1,150 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Blogs page</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../assets/styles/blogs.css">
-        <link rel="stylesheet" href="../assets/styles/styles.css">
-    </head>
-    <body>
-        <header>
-            <a href="../index.html"> <img src="../assets/icons/logos/blog_logo.svg" class="logo" alt="Website logo with website name"/> </a>
-        </header>
+<html lang="en-us">
+  <head>
+    <title>Blogs page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/styles/blogs.css"/>
+    <link rel="stylesheet" href="../assets/styles/styles.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../assets/icons/logos/blog_logo.svg" class="logo" alt="Website logo with website name"/></a>
+    </header>
 
-        <nav>
-            <ul>
-                <li> <a href="../src/travel.html"> Travel </a> </li>
-                <li> <a href="../src/plants.html"> Plants </a> </li>
-                <li> <a href="../src/blogs.html"> Blogs </a> </li>
-                <li> <a href="../src/computers.html"> Computers </a> </li>
-                <li> <input type="text" id="search" name="search" placeholder="Search"/> </li>
-            </ul>
-        </nav>
+    <nav>
+      <ul>
+        <li><a href="../src/travel.html">Travel</a></li>
+        <li><a href="../src/plants.html">Plants</a></li>
+        <li><a href="../src/blogs.html">Blogs</a></li>
+        <li><a href="../src/computers.html">Computers</a></li>
+        <li><input type="text" class="search-input" name="search" placeholder="Search"/></li>
+      </ul>
+    </nav>
 
-        <section id="top-blogs-section">
-            <div id="top-blogs-bg">
-                <div class="top-blogs-text-container">
-                    <p class="top-blogs-title-text"> Your title </p>
-                    <p class="top-blogs-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                </div>
+    <section id="top-blogs-section">
+      <article id="top-blogs-bg">
+        <div class="top-blogs-text-container">
+          <p class="top-blogs-title-text">Your title</p>
+          <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </article>
+      <article id="top-blogs-bg-2">
+        <div class="top-blogs-text-container">
+          <p class="top-blogs-title-text">Your title</p>
+          <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </article>
+      <article id="top-blogs-bg-3">
+        <div class="top-blogs-text-container">
+          <p class="top-blogs-title-text">Your title</p>
+          <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </article>
+    </section>
+
+    <div id="content-container">
+      <div id="article-container">
+        <p id="content-container-header">Features</p>
+        <article class="featured-article">
+          <div class="featured-article-img-container">
+            <img src="../assets/images/blogs/blog_1.png" class="featured-article-img" alt=""/>
+          </div>
+          <p class="featured-article-title-text">Your title here</p>
+          <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="featured-article-more-info-container">
+            <a href="#"><button class="more-info-button">Read more</button></a>
+            <div class="more-info-social-icons-container">
+              <a href="#"><img src="../assets/icons/blogs/message.svg" class="icon" alt=""/></a>
+              <a href="#"><button class="more-info-share-button">Share</button></a>
+              <a href="#"><img src="../assets/icons/blogs/facebook.svg" class="icon" alt=""/></a>
+              <a href="#"><img src="../assets/icons/blogs/twitter.svg" class="icon" alt=""/></a>
             </div>
-            <div id="top-blogs-bg-2">
-                <div class="top-blogs-text-container">
-                    <p class="top-blogs-title-text"> Your title </p>
-                    <p class="top-blogs-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                </div>
-            </div>
-            <div id="top-blogs-bg-3">
-                <div class="top-blogs-text-container">
-                    <p class="top-blogs-title-text"> Your title </p>
-                    <p class="top-blogs-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                </div>
-            </div>
-        </section>
+          </div>
+        </article>
 
-        <div id="content-container">
-            <div id="article-container">
-                <p id="content-container-header">
-                    Features
-                </p>
-                <article class="featured-article">
-                    <div class="featured-article-img-container">
-                        <img src="../assets/images/blogs/blog_1.png" class="featured-article-img-container" alt=""/>
-                    </div>
-                    <p class="featured-article-title-text"> Your title here </p>
-                    <p class="featured-article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                        <div class="featured-article-more-info-container ">
-                            <button class="more-info-button">Read more</button>
-                            <div class="more-info-social-icons-container">
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/message.svg" class="icon" alt=""/>
-                                </div>
-                                <div class="more-info-icon">
-                                    <button class="more-info-share-button">Share</button>
-                                </div>
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/facebook.svg" class="icon" alt=""/>
-                                </div>
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/twitter.svg" class="icon" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                </article>
-
-                <div id="article-divider">
-                    <hr>
-                </div>
-
-                <article class="featured-article">
-                    <div class="featured-article-img-container">
-                        <img src="../assets/images/blogs/blog_1.png" class="featured-article-img-container" alt=""/>
-                    </div>
-                    <p class="featured-article-title-text"> Your title here </p>
-                    <p class="featured-article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                        <div class="featured-article-more-info-container ">
-                            <button class="more-info-button">Read more</button>
-                            <div class="more-info-social-icons-container">
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/message.svg" class="icon" alt=""/>
-                                </div>
-                                <div class="more-info-icon">
-                                    <button class="more-info-share-button">Share</button>
-                                </div>
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/facebook.svg" class="icon" alt=""/>
-                                </div>
-                                <div class="more-info-icon">
-                                    <img src="../assets/icons/blogs/twitter.svg" class="icon" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                </article>
-            </div>
-        
-            <div id="aside-container">
-                <aside>
-                    <div id="news-letter">
-                        <p class="aside-header-text"> News Letter </p>
-                        <input type="text" id="aside-text-input" name="aside-text-input" placeholder="Search"/>
-                        <button id="aside-button">Sign Up</button>
-                    </div>
-                    <div id="categories">
-                        <p class="aside-header-text"> Categories </p>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (1) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (2) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (3) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (4) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (5) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (6) </button>
-                            <hr>
-                        </div>
-                        <div class="category-container">
-                            <button class="aside-category-button"> Categories (7) </button>
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div id="follow">
-                        <p class="aside-header-text"> Follow </p>
-                        <div id="icon-container">
-                            <img src="../assets/icons/blogs/facebook.svg" class="big-icon"/>
-                            <img src="../assets/icons/blogs/instagram.svg" class="big-icon"/>
-                            <img src="../assets/icons/blogs/pinterest.svg" class="big-icon"/>
-                            <img src="../assets/icons/blogs/twitter_2.svg" class="big-icon"/>
-                        </div>
-                    </div>
-
-                    <div id="contact">
-                        <p class="aside-header-text"> Contact Us </p>
-                        <p class="aside-text"> info@blogsite.com </p>
-                    </div>
-                </aside>
-            </div>
+        <div id="article-divider">
+          <hr/>
         </div>
 
-        <footer>
-            <p> Copyright @Blog company Ltd. All rights reserved. </p>
-        </footer>
-    </body>
+        <article class="featured-article">
+          <div class="featured-article-img-container">
+            <img src="../assets/images/blogs/blog_1.png" class="featured-article-img" alt=""/>
+          </div>
+          <p class="featured-article-title-text">Your title here</p>
+          <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="featured-article-more-info-container">
+            <a href="#"><button class="more-info-button">Read more</button></a>
+            <div class="more-info-social-icons-container">
+              <a href="#"><img src="../assets/icons/blogs/message.svg" class="icon" alt=""/></a>
+              <a href="#"><button class="more-info-share-button">Share</button></a>
+              <a href="#"><img src="../assets/icons/blogs/facebook.svg" class="icon" alt=""/></a>
+              <a href="#"><img src="../assets/icons/blogs/twitter.svg" class="icon" alt=""/></a>
+            </div>
+          </div>
+        </article>
+      </div>
+        
+      <div id="aside-container">
+        <aside>
+          <div id="news-letter">
+            <p class="aside-header-text">News Letter</p>
+            <input type="text" class="search-input" name="aside-text-input" placeholder="Search"/>
+            <a href="#"><button id="aside-button">Sign Up</button></a>
+          </div>
+
+          <div id="categories">
+            <p class="aside-header-text">Categories</p>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (1)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (2)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (3)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (4)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (5)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (6)</button></a>
+              <hr>
+            </div>
+            <div class="category-container">
+              <a href="#"><button class="aside-category-button">Categories (7)</button></a>
+              <hr>
+            </div>
+          </div>
+
+          <div id="follow">
+            <p class="aside-header-text">Follow</p>
+            <div id="icon-container">
+              <a href="#"><img src="../assets/icons/blogs/facebook.svg" class="big-icon"/></a>
+              <a href="#"><img src="../assets/icons/blogs/instagram.svg" class="big-icon"/></a>
+              <a href="#"><img src="../assets/icons/blogs/pinterest.svg" class="big-icon"/></a>
+              <a href="#"><img src="../assets/icons/blogs/twitter_2.svg" class="big-icon"/></a>
+            </div>
+          </div>
+
+          <div id="contact">
+            <p class="aside-header-text">Contact Us</p>
+            <a href="mailto:info@blogsite.com" class="aside-text">info@blogsite.com</a>            
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer>
+      <p class="blogs-text">Copyright @Blog company Ltd. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
