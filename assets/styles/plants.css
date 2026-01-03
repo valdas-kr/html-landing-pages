@@ -89,6 +89,9 @@ nav {
   background-image:url(../images/plants/quote.png);
   padding-top: 20%; display: flex; flex-direction: column; align-items: start;
   text-align: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #tips-text-container {
@@ -110,6 +113,9 @@ nav {
 #quote-section {
   background-image:url(../images/plants/tips.png);
   padding-top: 20%; display: flex; flex-direction: column; align-items: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #quote-text-container {
@@ -191,15 +197,16 @@ nav {
 }
 
 #shop-subheader-container {
-  display: flex; flex-direction: row; padding-top: 50px; justify-content: space-between;
+  display: flex; flex-direction: row; padding-top: 32px; justify-content: space-between; font-size: 20px;
 }
 
 #shop-items-container {
-  padding-top: 36px; display: flex; flex-direction: row; justify-content: space-between;
+  padding-top: 32px; display: flex; flex-direction: row; justify-content: space-between;
 }
 
 .shop-item {
-  width: 25%; border: 1px solid rgb(187, 54, 54); border-radius: 16px; background-color: #a6ffe9; box-shadow: 10px 12px #70ffdb;
+  width: 27%; height: 320px; border: 1px solid rgb(187, 54, 54); border-radius: 16px; background-color: #a6ffe9; box-shadow: 11px 15px #70ffdb;
+  display: flex; flex-direction: column;
 }
 
 .shop-item-inner {
@@ -207,7 +214,7 @@ nav {
 }
 
 .shop-item-img {
-  width: 100%; border-radius: 16px;
+  width: 100%; border-radius: 16px; height: 250px;
 }
 
 .shop-item-text-container {
@@ -247,15 +254,15 @@ nav {
 }
 
 #bedroom-second-image-container {
-  width: 30%; padding-top: 30%; margin-left: -80px; z-index: 1;
+  width: 30%; padding-top: 30%; margin-left: -130px; z-index: 1;
 }
 
 #bedroom-third-image-container {
-  width: 25%; padding-top: 80%; margin-left: 90px; z-index: 3;
+  width: 50%; padding-top: 75%; margin-left: 90px; z-index: 3;
 }
 
 #bedroom-first-img, #bedroom-third-img {
-  width: 100%; border-radius: 16px;
+  width: 80%; border-radius: 16px;
 }
 
 #bedroom-second-img {
