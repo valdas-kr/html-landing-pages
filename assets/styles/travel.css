@@ -1,17 +1,9 @@
-header, #content-section, #sales-section, #shop-section, footer, #blog-section {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-#content-section, #sales-section, #shop-section, #blog-section {
-  padding-bottom: 64px;
-  padding-top: 64px;
-}
-
 header {
   background-image: url(../images/travel/header.png);
-  padding-bottom: 64px;
-  padding-top: 32px;
+  row-gap: 96px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
@@ -19,7 +11,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: flex;
 }
 
 li a {
@@ -31,34 +22,11 @@ li a {
   text-decoration: none;
 }
 
-li a:hover{
-  color: black;
-  cursor: zoom-in;
-  font-weight: 900;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  letter-spacing: 2px;
-}
-
-input[type="text"] {
+input {
   padding: 15px;
   height: 48px;
   border: none;
   outline: none;
-  letter-spacing: 2px;
-  color: #514b48;
-}
-
-input[type="date"] {
-  padding: 15px;
-  height: 48px;
-  border: none;
-  outline: none;
-  letter-spacing: 2px;
   color: #514b48;
 }
 
@@ -68,21 +36,9 @@ input[type="date"] {
   letter-spacing: 4px;
 }
 
-button {
-  border-radius: 16px;
-}
-
-#header-section {
-  padding-top: 96px; 
-  display: flex;
-  flex-direction: column;
-}
-
 #social-icons-container {
   padding-top: 32px;
   width:100%;
-  display: flex;
-  flex-direction: column;
   align-items: end;
   row-gap: 16px;
   margin-left: 8%;
@@ -98,14 +54,11 @@ button {
 #header-text {
   padding-top: 64px;
   width: 30%;
-  letter-spacing: 2px;
 }
 
 #input-container {
-  display: flex;
   width: 100%;
   padding-top: 32px;
-  flex-direction: row;
 }
 
 .input-divider {
@@ -124,23 +77,9 @@ button {
   flex: 1.25;
 }
 
-#search-button {
-  height: 48px;
-  border: none;
-  letter-spacing: 2px;
-  background-color: #ff9226;
-  color: #e6ffff;
-  font-weight: 900;
-  cursor: pointer;
-  flex: 1.75;
-}
-
 #blog-section {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   row-gap: 64px;
-  align-items: center;
 }
 
 #blog-header-text {
@@ -148,20 +87,13 @@ button {
   font-size: 40px
 }
 
-.travel-button {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  width: 200px;
-  padding: 12px 32px 12px 32px;
-}
-
 #blogs-container {
-  display: flex; flex-direction: row; justify-content: space-between; text-align: left;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
 .blog-article {
-  width: 31%; border-radius: 16px; border: 1px solid #41fc70; box-shadow: 16px 16px rgb(176, 255, 169);
+  width: 31%; border: 1px solid #41fc70; box-shadow: 16px 16px rgb(176, 255, 169);
 }
 
 .blog-image {
@@ -173,15 +105,15 @@ button {
 }
 
 #content-section {
-  display: flex; flex-direction: row; justify-content: space-between; height: 900px;
+  height: 900px;
 }
 
 #content-sideways-text {
-  letter-spacing: 2px; font-size: 108px; writing-mode: vertical-rl; color: white; margin-top: -50%;
+  font-size: 108px; writing-mode: vertical-rl; color: white; margin-top: -50%;
 }
 
 .content-image {
-  height: 100%; width: 100%; border-radius: 16px; 
+  height: 100%; width: 100%;
 }
 
 #content-first-column {
@@ -189,7 +121,7 @@ button {
 }
 
 #content-second-column {
-  display: flex; flex-direction: column; width: 41%; 
+  width: 41%; 
 }
 
 #content-first-row {
@@ -217,10 +149,6 @@ button {
   font-size: 19px; line-height: 1.5;
 }
 
-#sales-section {
-  display: flex; flex-direction: column;
-}
-
 #sales-image {
   width: 100%; border-radius: 16px 16px 0px 0px;
 }
@@ -235,13 +163,12 @@ button {
 
 #shop-section {
   background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
-  display: flex; flex-direction: row; justify-content: space-between; align-items: center;
 }
 
 #shop-first-column {
-  width: 46%; display: flex; flex-direction: column; padding: 48px 16px 48px 16px; 
-  box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a; background-color: rgb(190, 224, 253); border-radius: 16px;
-  text-align: center; align-items: center;
+  width: 46%; padding: 48px 16px 48px 16px; 
+  box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a; background-color: rgb(190, 224, 253);
+  text-align: center;
 }
 
 .header-text {
@@ -252,24 +179,35 @@ button {
   font-size: 24px; color: black; padding-top: 24px; padding-bottom: 24px;
 }
 
-#shop-button {
-  background-color: black; color: white; font-size: 16px; width: 200px; padding: 12px 32px 12px 32px;
-}
-
 #shop-second-column {
   background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9)),
               url(../images/travel/shop.png);
   width: 46%;
   height: 100%;
   background-size: cover;
-  border-radius: 16px;
+}
+
+#header-button {
+  height: 48px;
+  border: none;
+  background-color: #ff9226;
+  color: #e6ffff;
+  font-weight: 900;
+  cursor: pointer;
+  flex: 1.75;
+}
+
+.body-button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  width: 200px;
+  padding: 12px 32px 12px 32px;
 }
 
 footer {
-  padding-bottom: 32px;
-  padding-top: 64px;
   background: linear-gradient(180deg, rgb(234, 209, 255), rgb(207, 153, 255));
-  display: flex; flex-direction: column; text-align: center;
+  text-align: center;
 }
 
 #footer-hr {
@@ -285,47 +223,56 @@ footer {
 }
 
 #footer-icons-container {
-  display: flex; flex-direction: row; column-gap: 36px; padding-top: 36px; justify-content: center;
+  column-gap: 36px;
+  padding-top: 36px;
+  justify-content: center;
   padding-bottom: 36px;
 }
 
 #final-section {
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 32px;
-  padding-right: 32px;
-  height: 600px;
   background-color: beige;
-  display: flex; flex-direction: row; justify-content: space-between;
-  text-align: right;
+  text-align: left;
+  height: 600px;
 }
 
-#final-section-first-column {
-  width: 49%; display: flex; flex-direction: column; padding-top: 64px; align-items: end;
+#final-section-text-column {
+  width: 49%;
+  row-gap: 16px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  padding-right: 64px;
+  justify-content: center;
 }
 
 #final-section-img {
-  width: 100%; height: 100%;
+  width: 45%; height: 100%;
 }
 
-#final-section-second-column, #last-section-first-column {
-  width: 45%;
+#header-section, #social-icons-container, #blog-section, #content-second-column, #sales-section, 
+#shop-first-column, footer, #final-section-text-column, header {
+  display: flex; flex-direction: column;
 }
 
-#last-section {
-  padding-bottom: 64px;
-  padding-top: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
-  background-color: rgb(227, 220, 245);
-  height: 400px;
-  display: flex; flex-direction: row; justify-content: space-between;
+#input-container, #blogs-container, #content-section, #shop-section, #footer-icons-container, #final-section, nav, ul {
+  display: flex; flex-direction: row;
 }
 
-#last-section-img {
-  width: 100%; height: 190%; transform: translateY(-270px);
+header, #content-section, #sales-section, #shop-section, footer, #blog-section {
+  padding: 64px 100px;
 }
 
-#last-section-second-column {
-  width: 49%; display: flex; flex-direction: column;
+nav, #blogs-container, #content-section, #shop-section, #final-section {
+  justify-content: space-between;
+}
+
+nav, #blog-section, #shop-first-column, #shop-section {
+  align-items: center;
+}
+
+nav, input, #header-text, #header-button, #content-sideways-text {
+  letter-spacing: 2px;
+}
+
+.blog-article, .content-image, #shop-first-column, #shop-second-column, .body-button{
+  border-radius: 16px;
 }
