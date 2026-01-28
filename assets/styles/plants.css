@@ -16,9 +16,7 @@ header { background-image: url(../images/plants/header.png); }
   background-position: center;
 }
 
-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer, #care-section {
-  padding: 32px 16px;
-}
+header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer, #care-section { padding: 32px 16px; }
 
 header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #care-section { height: 700px; }
 
@@ -35,7 +33,6 @@ header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrival
 
 #header-big-text {
   font-size: 4rem;
-  width: 30%;
   font-weight: 700;
 }
 
@@ -55,7 +52,6 @@ header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrival
   column-gap: 14px;
   padding-top: 8px;
 }
-/* header end */
 
 /* nav */
 ul {
@@ -79,7 +75,6 @@ nav {
   align-items: center;
   letter-spacing: 2px;
 }
-/* nav end */
 
 /* tips section */
 #tips-section {
@@ -106,7 +101,6 @@ nav {
   font-size: 1.625rem;
   padding-top: 32px; 
 }
-/* tips section end */
 
 /* quote section */
 #quote-section {
@@ -121,12 +115,10 @@ nav {
   font-size: 4rem;
   text-align: left;
 }
-/* quote section end */
 
 /* arrivals section */
 #arrivals-section {
   background: linear-gradient(180deg, rgb(172, 198, 250) 50%, rgb(147, 160, 230) 50%);
-  padding: 16px 24px;
   display: flex;
   justify-content: center;
 }
@@ -145,10 +137,10 @@ nav {
 
 #arrivals-info {
   position: relative;
-  top: -116%;                      
+  top: -119%;                      
   left: 10%;
   background: white;
-  transform: translateY(91px);
+  transform: translateY(90px);
   width: 250px;
   height: 500px;
   padding: 36px 28px 16px 28px;
@@ -171,7 +163,6 @@ nav {
 #arrivals-habits-info, #arrivals-additional-info { gap: 16px; }
 
 .arrivals-row-container { column-gap: 10px; }
-/* arrivals section end */
 
 /* shop section */
 #shop-button {
@@ -189,9 +180,7 @@ nav {
   text-decoration: underline;
 }
 
-#shop-section {
-  background-color: rgb(235, 255, 255);
-}
+#shop-section { background-color: rgb(235, 255, 255); }
 
 #shop-header-small-text { font-size: 2.25rem; }
 
@@ -235,7 +224,6 @@ nav {
 }
 
 .shop-item-text { font-size: 1.125rem; }
-/* shop section end */
 
 /* care section */
 #care-section {
@@ -247,17 +235,17 @@ nav {
   letter-spacing: 2px;
   width: 100%;
   text-align: center;
+  font-weight: 500;
 }
 
-#care-container {
-  width: 100%;
-}
+#care-container { width: 100%; }
 
-#care-header-img-container {
-  justify-content: center;
-}
+#care-header-img-container { justify-content: center; }
 
-#care-img { height: 400px; width: 80%;}
+#care-img {
+  height: 400px;
+  width: 80%;
+}
 
 #care-info-container { justify-content: space-between;}
 
@@ -282,25 +270,21 @@ nav {
   padding-top: 12px;
   font-size: 1rem;
 }
-/* care section end */
 
 /* bedroom section */
 #bedroom-section {
-  background-color: rgb(181, 255, 166); row-gap: 24px;
+  background-color: rgb(181, 255, 166);
+  row-gap: 24px;
 }
 
-#bedroom-text-container {
-  width: 100%;
-}
+#bedroom-text-container { width: 100%; }
 
 #bedroom-img-container {
   width: 100%;
   justify-content: end;
 }
 
-#bedroom-big-text {
-  font-size: 4.5rem;
-}
+#bedroom-big-text { font-size: 4.5rem; }
 
 #bedroom-small-text {
   font-size: 1.5rem;
@@ -327,6 +311,8 @@ nav {
   z-index: 3;
 }
 
+#bedroom-third-img { height: 100%; }
+
 #bedroom-first-img, #bedroom-third-img {
   width: 100%;
   border-radius: 16px;
@@ -337,10 +323,12 @@ nav {
   height: 90%;
   border-radius: 16px;
 }
-/* bedroom section end */
 
 /* footer */
-footer { background-color: black; row-gap: 24px;}
+footer {
+  background-color: black;
+  row-gap: 24px;
+}
 
 #footer-divider {
   width: 50%;
@@ -358,13 +346,10 @@ footer { background-color: black; row-gap: 24px;}
   font-size: 1.25rem;
   color: wheat;
 }
-/* footer end */
 
 /* desktop devices */
 @media (min-width: 1024px) {
-  header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
-    padding: 32px 100px;
-  }
+  header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer { padding: 32px 100px; }
 
   #header-text-container {
     padding-top: 64px;
@@ -374,28 +359,20 @@ footer { background-color: black; row-gap: 24px;}
 
   #header-small-text { font-size: 1.5rem; }
 
-  #header-big-text {
-    font-size: 4.875rem;
-    width: 30%;
-  }
+  #header-big-text { font-size: 4.875rem; }
 
-  #header-medium-text {
-    font-size: 2.625rem;
-  }
+  #header-medium-text { font-size: 2.625rem; }
 
-  li a {
-    padding-left: 36px;
-  }
+  li a { padding-left: 36px; }
 
   #tips-text-container { width: 40%; }
 
   #quote-text-container { width: 50%; }
 
-  #arrivals-section {
-    padding: 84px 136px;
-  }
+  #arrivals-section { padding: 84px 136px; }
 
   #arrivals-info {
+    top: -116%;
     transform: translateY(1px);
   }
 
@@ -409,15 +386,11 @@ footer { background-color: black; row-gap: 24px;}
     padding-bottom: 64px;
   }
 
-  #shop-items-container {
-    padding-top: 32px;
-  }
+  #shop-items-container { padding-top: 32px; }
 
   #shop-header-small-text { font-size: 2,625rem; }
 
-  #shop-header-large-text {
-    font-size: 5rem; 
-  }
+  #shop-header-large-text { font-size: 5rem; }
 
   #shop-subheader-container {
     padding-top: 32px;
@@ -434,42 +407,26 @@ footer { background-color: black; row-gap: 24px;}
     height: 250px;
   }
 
-  .care-detailed-info-container {
-    width: 30%;
-  }
+  .care-detailed-info-container { width: 30%; }
 
-  .footer-text {
-    font-size: 1.5rem;
-  }
+  .footer-text { font-size: 1.5rem; }
 
-  #bedroom-first-image-container {
-    display: block;
-  }
+  #bedroom-first-image-container { display: block; }
 
-  #bedroom-second-image-container {
-    display: block;
-  }
+  #bedroom-second-image-container { display: block; }
 
-  #bedroom-section {
-    align-items: center;
-  }
+  #bedroom-section { align-items: center; }
 
-  #bedroom-text-container {
-    width: 39%;
-  }
+  #bedroom-text-container { width: 39%; }
 
-  #bedroom-img-container {
-    width: 59%;
-  }
+  #bedroom-img-container { width: 59%; }
 
   #bedroom-third-image-container {
     width: 50%;
     padding-top: 75%;
   }
   
-  #bedroom-first-img, #bedroom-third-img {
-    width: 80%;
-  }
+  #bedroom-first-img, #bedroom-third-img { width: 80%; }
 
   #care-section {
     padding-bottom: 32px;
@@ -487,17 +444,11 @@ footer { background-color: black; row-gap: 24px;}
 
   #care-info-container { padding-right: 32px; }
   
-  #care-container {
-    width: 58%;
-  }
+  #care-container { width: 58%; }
 
   #care-img { height: 500px;}
   
-  #care-header-img-container {
-    justify-content: end;
-  }
+  #care-header-img-container { justify-content: end; }
 
-  .care-detailed-info-container {
-    width: 33%;
-  }
+  .care-detailed-info-container { width: 33%; }
 }

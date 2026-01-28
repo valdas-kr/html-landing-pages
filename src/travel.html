@@ -2,16 +2,16 @@
 <html lang="en-us">
   <head>
     <title>Travel page</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../assets/styles/travel.css"/>
-    <link rel="stylesheet" href="../assets/styles/styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/travel.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
   </head>
   <body>
     <header>
       <nav>
         <a href="../index.html">
-          <img src="../assets/icons/logos/travel_logo.svg" class="logo" alt="Website logo with an airplane and website name"/>
+          <img src="../assets/icons/logos/travel_logo.svg" class="logo" alt="Website logo with an airplane and website name">
         </a>
         <ul>
           <li><a href="../src/travel.html">TRAVEL</a></li>
@@ -24,97 +24,97 @@
       <section id="hero-section">
         <h1 id="hero-header-text">Travel</h1>
         <div id="hero-icons-container">
-          <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="icon" alt="Facebook icon"/></a>
-          <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="icon" alt="Instagram icon"/></a>
-          <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="icon" alt="Twitter icon"/></a>
+          <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook icon"></a>
+          <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram icon"></a>
+          <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter icon"></a>
         </div>
         <p class="hero-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
           do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="input-container">
-          <input type="text" id="from-input" name="from" placeholder="From"/>
+          <input type="text" id="from-input" name="from" placeholder="From">
           <hr class="input-divider">
-          <input type="text" id="to-input" name="to" placeholder="To"/>
+          <input type="text" id="to-input" name="to" placeholder="To">
           <hr class="input-divider">
-          <input type="date" id="since-input" name="since"/>
+          <input type="date" id="since-input" name="since">
           <hr class="input-divider">
-          <input type="date" id="until-input" name="until"/>
+          <input type="date" id="until-input" name="until">
           <hr class="input-divider">
           <button type="button" id="header-button" onclick="ShowAlert()" name="search"> Search </button>
         </div>  
       </section>
     </header>
 
+    <section id="blog-section">
+      <h2 class="section-header-text">Blog section</h2>
+      <div id="blogs-container">
+        <article class="blog-container">
+          <img src="../assets/images/travel/blog1.png" class="blog-image">
+          <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </article>
+        <article class="blog-container">
+          <img src="../assets/images/travel/blog2.png" class="blog-image">
+          <p class="blog-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+        </article>
+        <article class="blog-container">
+          <img src="../assets/images/travel/blog3.png" class="blog-image">
+          <p class="blog-text">Excepteur sint occaecat cupidatat non proident</p>
+        </article>
+      </div>
+      <a href="#" class="body-button-container"><button class="body-button">More blogs</button></a>
+    </section>
+
     <section id="content-section">
-      <div id="content-first-column">
-        <img src="../assets/images/travel/content.png" loading="lazy" alt="" class="content-image"/>
+      <div id="content-first-container">
+        <img src="../assets/images/travel/content.png" loading="lazy" alt="" class="content-image">
         <p id="content-sideways-text">travel</p>
       </div>
-      <div id="content-second-column">
-        <img src="../assets/images/travel/content_1.png" loading="lazy" alt="" class="content-image"/>
+      <div id="content-second-container">
+        <img src="../assets/images/travel/content_1.png" loading="lazy" alt="" class="content-image">
         <div id="content-text-container">
           <h3 class="section-header-text">Content Section</h3>
-          <div id="content-small-padding">
-            <p id="content-text">
-             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-             officia deserunt mollit anim id est laborum."
-            </p>
-          </div>
-          <div id="content-big-padding">
-            <a href="#"><button class="body-button">Read more</button></a>
-          </div>
+          <p id="content-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum."
+          </p>
+          <a href="#"><button class="body-button">Read more</button></a>
         </div>
       </div>
     </section>
 
+    <section id="shop-section">
+      <div id="shop-first-container">
+        <h5 class="section-header-text">Shop Section</h5>
+        <p class="shop-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+        </p>
+        <a href="#" class="body-button-container"><button class="body-button">Shop now</button></a>
+      </div>
+      <div id="shop-second-container">
+        <picture>
+          <source media="(min-width: 651px)" srcset="../assets/images/travel/shop.png">
+          <source media="(max-width: 650px)" srcset="../assets/images/travel/shop_2.png">
+          <img id="shop-image" src="../assets/images/travel/shop.png">
+        </picture>
+      </div>
+    </section>
+
     <section id="sales-section">
-      <img src="../assets/images/travel/sales.png" loading="lazy" alt="" id="sales-image"/>
+      <img src="../assets/images/travel/sales.png" loading="lazy" alt="" id="sales-image">
       <div id="sales-background">
         <h4 id="sales-text">50% Off Until December</h4>
       </div>
     </section>
 
-    <section id="shop-section">
-      <div id="shop-first-column">
-        <h5 class="header-text">Shop Section</h5>
-        <p class="text">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-        </p>
-        <a href="#" class="body-button-container"><button class="body-button">Shop now</button></a>
-      </div>
-      <div id="shop-second-column">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
-    </section>
-
-     <section id="blog-section">
-      <h2 class="section-header-text">Blog section</h2>
-      <div id="blogs-container">
-        <article class="blog-container">
-          <img src="../assets/images/travel/blog1.png" class="blog-image"/>
-          <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </article>
-        <article class="blog-container">
-          <img src="../assets/images/travel/blog2.png" class="blog-image"/>
-          <p class="blog-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        </article>
-        <article class="blog-container">
-          <img src="../assets/images/travel/blog3.png" class="blog-image"/>
-          <p class="blog-text">Excepteur sint occaecat cupidatat non proident</p>
-        </article>
-      </div>
-      <a href="#" class="body-button-container"><button class="body-button">All blogs</button></a>
-    </section>
-
     <section id="info-section">
-      <img src="../assets/images/travel/final_1.png" loading="lazy" alt="" id="info-image"/>
+      <img src="../assets/images/travel/final_1.png" loading="lazy" alt="" id="info-image">
       <div id="info-section-text-container">
-        <h6 class="header-text">More info section</h6>
+        <h6 class="section-header-text">More info section</h6>
         <p class="text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -125,9 +125,9 @@
 
     <footer>
       <div id="footer-icons-container">
-        <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="icon" alt="Facebook logo icon"/></a>
-        <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="icon" alt="Instagram logo icon"/></a>
-        <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="icon" alt="Twitter logo icon"/></a>
+        <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook logo icon"></a>
+        <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram logo icon"></a>
+        <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter logo icon"></a>
       </div>
       <hr id="footer-hr">
       <p class="footer-text">Copyright @Travel</p>

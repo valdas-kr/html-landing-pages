@@ -29,3 +29,16 @@ body {
   width: 200px;
   height: 45px;
 }
+
+.social-media-icon {
+  width: 36px;
+  height: 36px;
+}
+
+/* desktop devices */
+@media (min-width: 1024px) {
+  .social-media-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

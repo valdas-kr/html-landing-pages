@@ -1,5 +1,5 @@
-#hero-section, #blog-section, #content-second-column, #sales-section, 
-#shop-first-column, footer, #info-section-text-container, header, #content-text-container {
+#hero-section, #blog-section, #content-second-container, #sales-section, 
+#shop-first-container, footer, #info-section-text-container, header, #content-text-container {
   display: flex; flex-direction: column; flex-wrap: wrap;
 }
 
@@ -12,11 +12,11 @@ header, footer, section { padding: 32px 16px; }
 
 nav, #blogs-container, #content-section, #shop-section, #info-section { justify-content: space-between; }
 
-nav, #blog-section, #shop-first-column, #shop-section { align-items: center; }
+nav, #blog-section, #shop-first-container, #shop-section { align-items: center; }
 
 nav, input, .hero-text, #header-button, #content-sideways-text { letter-spacing: 2px; }
 
-.blog-container, .content-image, #shop-first-column, #shop-second-column, .body-button{ border-radius: 16px; }
+.blog-container, .content-image, #shop-first-container, #shop-second-container, .body-button{ border-radius: 16px; }
 
 button { text-transform: uppercase; }
 
@@ -27,7 +27,7 @@ button:hover { cursor: pointer; }
 /* footer */
 footer {
   background: linear-gradient(180deg, rgb(255, 209, 228), rgb(255, 153, 216));
-  text-align: center;
+  align-items: center;
   row-gap: 24px;
 }
 
@@ -41,14 +41,9 @@ footer {
 .footer-text {
   font-size: 1rem;
   color: black;
-  text-align: center;
 }
 
-#footer-icons-container {
-  column-gap: 36px;
-  justify-content: center;
-}
-/* footer end */
+#footer-icons-container { gap: 36px; }
 
 /* sales section */
 #sales-image {
@@ -71,7 +66,6 @@ footer {
   padding: 24px;
   font-weight: 500;
 }
-/* sales section end */
 
 /* info section */
 #info-section {
@@ -82,6 +76,7 @@ footer {
 #info-section-text-container {
   width: 100%;
   row-gap: 24px;
+  text-align: center;
 }
 
 #info-image {
@@ -89,7 +84,6 @@ footer {
   height: auto;
   display: none;
 }
-/* final section end */
 
 /* text */
 .text {
@@ -98,20 +92,23 @@ footer {
   text-align: justify;
 }
 
+.shop-text {
+  font-size: 1.125rem;
+  color: black;
+}
+
 .hero-text {
   padding-top: 64px;
   width: 66%;
   color: white;
 }
 
-.header-text {
+.section-header-text {
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  text-align: center;
 }
-/* text end */
 
 /* inputs */
 .body-button {
@@ -123,39 +120,42 @@ footer {
 }
 
 .body-button-container { width: 100%; }
-/* inputs end */
 
 /* shop section */
 #shop-section {
-  background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
+  background: linear-gradient(90deg, rgb(255, 209, 228) 45%, rgb(255, 153, 216) 85%, rgb(251, 137, 207));
   gap: 24px;
 }
 
-#shop-first-column {
+#shop-first-container {
   width: 100%;
-  padding: 24px 12px 24px 12px; 
-  background-color: rgb(190, 224, 253);
-  text-align: center;
-  row-gap: 24px;
+  padding: 24px; 
+  background-color: beige;
+  text-align: justify;
+  row-gap: 16px;
 }
 
-#shop-second-column {
-  background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9)),
-              url(../images/travel/shop.png);
+#shop-second-container {
+  background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9));
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-/* shop section end */
+
+#shop-image {
+ width: 100%;
+ height: 100%;
+ border-radius: 16px;
+}
 
 /* content section */
 #content-section { background-color: azure; }
 
 #content-sideways-text {
-  font-size: 6.75rem;
+  font-size: 7rem;
   writing-mode: vertical-rl;
   color: white;
-  margin-top: -50%;
+  margin-top: -55%;
 }
 
 .content-image {
@@ -163,26 +163,21 @@ footer {
   width: 100%;
 }
 
-#content-first-column {
+#content-first-container {
   width: 55%;
   display: none;
 }
 
-#content-second-column {
+#content-second-container {
   width: 100%;
   height: 100%;
 }
 
 #content-text-container {
-  padding: 24px 24px 0px 24px;
+  padding: 32px 24px 0px 24px;
   row-gap: 24px;
-}
-
-.section-header-text {
-  font-size: 2.125rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
 }
 
@@ -191,7 +186,6 @@ footer {
   line-height: 1.5;
   text-align: justify;
 }
-/* content section end */
 
 /* blog section */
 #blog-section {
@@ -209,14 +203,14 @@ footer {
 }
 
 .blog-container {
-  width: 46%;
+  width: 100%;
   border: 1px solid #41fc70;
   background-color: beige;
 }
 
 .blog-image {
   width: 100%;
-  height: 175px;
+  height: 275px;
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -224,7 +218,6 @@ footer {
   padding: 16px;
   font-size: 1.125rem;
 }
-/* blog section end */
 
 /* nav */
 ul {
@@ -242,15 +235,15 @@ li a {
   font-size: 1rem;
   text-decoration: none;
 }
-/* nav end */
 
 /* header section */
 header {
-  background-image: url(../images/travel/header.png);
+  background: linear-gradient(rgb(255, 255, 255, 0.1)), url(../images/travel/header.png);
   row-gap: 96px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 input {
@@ -303,7 +296,6 @@ input {
   font-weight: 900;
   flex: 1.75;
 }
-/* header section end */
 
 /* desktop devices */
 @media (min-width: 1024px) {
@@ -315,7 +307,7 @@ input {
 
   footer { row-gap: 32px; }
 
-  .footer-text { font-size: 1.25rem; }
+  .footer-text, .shop-text { font-size: 1.25rem; }
 
   #sales-text {
     font-size: 2.125rem;
@@ -339,6 +331,7 @@ input {
     padding-top: 64px;
     padding-right: 64px;
     justify-content: center;
+    text-align: left;
   }
   
   .hero-text {
@@ -348,48 +341,35 @@ input {
   }
 
   .text {
-    font-size: 1.5rem;
-    color: black;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    font-size: 1.375rem;
+    text-align: left;
   }
 
-  .header-text {
-    font-size: 2.375rem;
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
+  .section-header-text { font-size: 2.375rem; }
 
-  #shop-first-column {
-    padding: 48px 16px 48px 16px; 
+  #shop-first-container {
     box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a;
     width: 46%;
+    text-align: right;
+    align-items: end;
+    row-gap: 24px;
   }
 
-  #content-first-column {
+  #content-first-container {
     width: 55%;
     display: block;
   }
 
-  #content-second-column { width: 41%; }
+  #content-second-container { width: 41%; }
 
-  .body-button {
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    width: 200px;
-    padding: 12px 32px 12px 32px;
-  }
+  .body-button { width: 200px; }
 
   .blog-container {
-    width: 31%;
+    width: 40%;
     box-shadow: 16px 16px rgb(176, 255, 169);
   }
 
-  #blog-section { row-gap: 64px; }
-
-  .blog-image { height: 225px; }
+  #blog-section { row-gap: 32px; }
 
   li a { padding-left: 32px; }
 
@@ -404,12 +384,16 @@ input {
     text-align: center;
   }
 
-  #content-text-container { padding: 48px 24px; }
+  #content-text-container { 
+    padding: 48px 24px 0px 24px;
+    row-gap: 32px;
+    align-items: start;
+    text-align: left;
+  }
+
+  #content-text { text-align: left; }
 
   #sales-image { height: 575px; }
 
-  #shop-second-column { width: 46%; }
-
-  #shop-first-column { padding: 12px 8px 12px 8px; }
+  #shop-second-container { width: 46%; }
 }
-/* desktop devices end */
