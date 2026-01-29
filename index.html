@@ -36,7 +36,8 @@
           Project description
         </h1>
         <p class="text">
-          This project consists of several web pages, written in ***HTML***, ***CSS*** and ***JavaScript***.
+          This project consists of several web pages, written in <span class="bold-italic-text">HTML</span>, 
+          <span class="bold-italic-text">CSS</span> and <span class="bold-italic-text">JavaScript</span>.
           All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected in page design, colors and style. All pages are optimised for different screen resolutions and sizes.
         </p>
       </article>
@@ -47,16 +48,10 @@
         <p class="text">
          Pictures, icons and other types of assets were used to develop these web pages:
         </p>
-        <ul>
-          <li>
-            - Logos - [looka](https://looka.com/)
-          </li>
-          <li>
-            - Icons - [icon-icons](https://icon-icons.com/)
-          </li>
-          <li>
-            - Images - [pixabay](https://pixabay.com/)
-          </li>
+        <ul id="links-list">
+          <li><span class="italic-text">Logos</span> - <a href="https://looka.com/">looka</a></li>
+          <li><span class="italic-text">Icons</span> - <a href="https://icon-icons.com/">icon-icons</a></li>
+          <li><span class="italic-text">Images</span> - <a href="https://pixabay.com/">pixabay</a></li>
         </ul>
       </article>
       <article class="index-text-container">
@@ -64,7 +59,7 @@
           Licence
         </h3>
         <p class="text">
-          This project uses *GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)*. 
+          This project uses <span class="italic-text">GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)</span>. 
         </p>
       </article>
     </section>
@@ -74,17 +69,25 @@
         Pages
       </h4>
       <div id="index-image-container">
-        <a href="src/travel.html">
-          <img src="assets/images/travel/blog1.png" class="index-image" alt="Travel page cover image">
+        <a href="src/travel.html" id="travel-image">
+          <div id="travel-overlay">
+            <p>Travel</p>
+          </div>
         </a>
-        <a href="src/plants.html">
-          <img src="assets/images/plants/arrivals.png" class="index-image" alt="Plants page cover image">
+        <a href="src/plants.html" id="plants-image">
+          <div id="plants-overlay">
+            <p>Plants</p>
+          </div>
         </a>
-        <a href="src/blogs.html">
-          <img src="assets/images/blogs/blog_1.png" class="index-image" alt="Blog page cover image">
+        <a href="src/blogs.html" id="blogs-image">
+          <div id="blogs-overlay">
+            <p>Blogs</p>
+          </div>
         </a>
-        <a href="src/computers.html">
-          <img src="assets/images/computers/gallery_2.jpg" class="index-image" alt="Computers page cover image">
+        <a href="src/computers.html" id="computers-image">
+          <div id="computers-overlay">
+            <p>Computers</p>
+          </div>
         </a>
       </div>
     </section>

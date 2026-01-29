@@ -11,17 +11,49 @@ header {
   flex-direction: column;
   gap: 24px;
   background-color: rgb(153, 252, 252);
+  line-height: 1.5;
 }
 
 #pages-container {
   background-color: rgb(143, 255, 218);
 }
 
-.index-image {
-  width: 200px;
-  height: 150px;
+.header-text {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 8px;
 }
 
+#links-list {
+  padding-left: 22px;
+}
+
+#links-list a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+
+#links-list a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+#links-list li::marker {
+  content: "🔎";
+}
+
+/* text */
+.bold-italic-text {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+/* images */
 #index-image-container {
   display: flex;
   flex-direction: row;
@@ -32,11 +64,102 @@ header {
   align-items: center;
 }
 
-.header-text {
+#index-image-container a {
+  text-decoration: none;
+  font-size: 1.125rem;
   color: black;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-bottom: 8px;
+}
+
+#travel-image, #plants-image, #blogs-image, #computers-image {
+  width: 200px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#travel-image {
+  background-image: url(../images/travel/blog1.png);
+  transition: 0.25s ease-in;
+}
+
+#travel-overlay, #plants-overlay, #blogs-overlay, #computers-overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#travel-image:hover {
+  transform: scale(1.05);
+}
+
+#travel-overlay {
+  transition: 0.25s ease-in;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#travel-image:hover #travel-overlay {
+  opacity: 1;
+}
+
+#plants-image {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+  background-image: url(../images/plants/arrivals.png);
+}
+
+#plants-image:hover {
+  filter: grayscale(100%);
+}
+
+#plants-overlay {
+  transition: 0.25s ease-in;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#plants-image:hover #plants-overlay {
+  opacity: 1;
+}
+
+#blogs-image {
+  transition: filter 0.3s ease;
+  background-image: url(../images/blogs/blog_1.png);
+}
+
+#blogs-image:hover {
+  filter: blur(3px);
+}
+
+#blogs-overlay {
+  transition: 0.25s ease-in;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#blogs-image:hover #blogs-overlay {
+  opacity: 1;
+}
+
+#computers-image {
+  background-image: url(../images/computers/gallery_2.jpg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#computers-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#computers-overlay {
+  transition: 0.25s ease-in;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#computers-image:hover #computers-overlay {
+  opacity: 1;
 }
 
 /* footer */
@@ -98,7 +221,7 @@ details[open] summary::after {
 
 /* desktop devices */
 @media (min-width: 1024px) {
-  .index-image {
+  #travel-image, #plants-image, #blogs-image, #computers-image {
     width: 325px;
     height: 250px;
   }
