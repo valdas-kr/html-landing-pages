@@ -1,28 +1,48 @@
 #hero-section, #blog-section, #content-second-container, #sales-section, .footer-text-container,
 #shop-first-container, footer, #info-section-text-container, header, #content-text-container {
-  display: flex; flex-direction: column; flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #input-container, #blogs-container, #content-section, #hero-icons-container,
 #shop-section, #footer-icons-container, #info-section, nav, ul {
-  display: flex; flex-direction: row; flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-header, footer, section { padding: 32px 16px; }
+header, footer, section {
+  padding: 32px 16px;
+}
 
-nav, #blogs-container, #content-section, #shop-section, #info-section { justify-content: space-between; }
+nav, #blogs-container, #content-section, #shop-section, #info-section {
+  justify-content: space-between;
+}
 
-nav, #blog-section, #shop-first-container, #shop-section { align-items: center; }
+nav, #blog-section, #shop-first-container, #shop-section {
+  align-items: center;
+}
 
-nav, input, .hero-text, #header-button, #content-sideways-text { letter-spacing: 2px; }
+nav, input, .hero-text, #header-button, #content-sideways-text {
+  letter-spacing: 2px;
+}
 
-.blog-container, .content-image, #shop-first-container, #shop-second-container, .body-button{ border-radius: 16px; }
+.blog-container, .content-image, #shop-first-container, #shop-second-container, .body-button {
+  border-radius: 16px;
+}
 
-button { text-transform: uppercase; }
+button {
+  text-transform: uppercase;
+}
 
-button:hover { cursor: pointer; }
+button:hover {
+  cursor: pointer;
+}
 
-#hero-section { padding: 0; }
+#hero-section {
+  padding: 0;
+}
 
 /* footer */
 footer {
@@ -31,7 +51,9 @@ footer {
   row-gap: 24px;
 }
 
-.footer-text-container { gap: 8px; }
+.footer-text-container {
+  gap: 8px;
+}
 
 .footer-divider {
   width: 90%;
@@ -51,7 +73,9 @@ footer {
   color: black;
 }
 
-#footer-icons-container { gap: 36px; }
+#footer-icons-container {
+  gap: 36px;
+}
 
 /* sales section */
 #sales-image {
@@ -127,7 +151,9 @@ footer {
   padding: 12px 32px 12px 32px;
 }
 
-.body-button-container { width: 100%; }
+.body-button-container {
+  width: 100%;
+}
 
 /* shop section */
 #shop-section {
@@ -157,7 +183,9 @@ footer {
 }
 
 /* content section */
-#content-section { background-color: azure; }
+#content-section {
+  background-color: azure;
+}
 
 #content-sideways-text {
   font-size: 7rem;
@@ -288,13 +316,21 @@ input {
   padding-top: 32px;
 }
 
-.input-divider { color: #8a8a8a; }
+.input-divider {
+  color: #8a8a8a;
+}
 
-#from-input { flex: 2; }
+#from-input {
+  flex: 2;
+}
 
-#to-input { flex: 2.5; }
+#to-input {
+  flex: 2.5;
+}
 
-#since-input, #until-input { flex: 1.25; }
+#since-input, #until-input {
+  flex: 1.25;
+}
 
 #header-button {
   height: 48px;
@@ -311,14 +347,18 @@ input {
     padding: 64px 100px;
   }
 
-  #info-section { padding: 0; }
+  #info-section {
+    padding: 0;
+  }
 
   footer { 
     row-gap: 32px;
     align-items: center;
   }
 
-  .footer-text, .shop-text { font-size: 1.25rem; }
+  .footer-text, .shop-text {
+    font-size: 1.25rem;
+  }
 
   #sales-text {
     font-size: 2.125rem;
@@ -356,7 +396,9 @@ input {
     text-align: left;
   }
 
-  .section-header-text { font-size: 2.375rem; }
+  .section-header-text {
+    font-size: 2.375rem;
+  }
 
   #shop-first-container {
     box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a;
@@ -371,18 +413,26 @@ input {
     display: block;
   }
 
-  #content-second-container { width: 41%; }
+  #content-second-container {
+    width: 41%;
+  }
 
-  .body-button { width: 200px; }
+  .body-button {
+    width: 200px;
+  }
 
   .blog-container {
     width: 40%;
     box-shadow: 16px 16px rgb(176, 255, 169);
   }
 
-  #blog-section { row-gap: 32px; }
+  #blog-section {
+    row-gap: 32px;
+  }
 
-  li a { padding-left: 32px; }
+  li a {
+    padding-left: 32px;
+  }
 
   #hero-icons-container {
     align-items: end;
@@ -402,11 +452,17 @@ input {
     text-align: left;
   }
 
-  #content-text { text-align: left; }
+  #content-text {
+    text-align: left;
+  }
 
-  #sales-image { height: 575px; }
+  #sales-image {
+    height: 575px;
+  }
 
-  #shop-second-container { width: 46%; }
+  #shop-second-container {
+    width: 46%;
+  }
 
   .footer-text-container {
     display: flex;

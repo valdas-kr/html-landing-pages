@@ -8,29 +8,29 @@ body {
   font-family: Helvetica, sans-serif;
   max-width: 1200px;
   margin: auto;
+  line-height: 1.6;
 }
 
 /* text color */
-.footer-info a, header, footer, section {
+#index-header, #index-footer, #page-links {
   color: rgb(62, 52, 52);
 }
 
-summary, .header-text {
+.footer-summary, .header-text {
   color: rgb(32, 31, 31)
 }
 
 /* header */
-header {
+#index-header {
   background-color: rgb(208, 233, 255);
 }
 
-header, section, footer {
+#index-header, #project-info, #page-links, #index-footer {
   padding: 32px;
-  line-height: 1.6;
 }
 
 /* nav + links */
-.nav-list {
+.index-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,13 +42,13 @@ header, section, footer {
   list-style-type: none
 }
 
-a {
+.index-nav a {
   text-decoration: none;
   color: rgb(73, 73, 73);
 }
 
-a:hover {
-  text-decoration: underline;
+.index-nav a:hover {
+  text-decoration: underline wavy yellowgreen;
   color: rgb(0, 0, 0);
 }
 
@@ -66,9 +66,19 @@ a:hover {
   font-weight: 600;
 }
 
-#links-list {
+#sources-list {
   padding: 8px 0px 0px 16px;
   list-style-type: square;
+}
+
+#sources-list a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+
+#sources-list a:hover {
+  text-decoration: underline dashed 2px orange;
+  color: rgb(0, 0, 0);
 }
 
 /* pages links section */
@@ -76,7 +86,7 @@ a:hover {
   background-color: rgb(143, 255, 218);
 }
 
-#index-image-container {
+#pages-preview {
   padding-top: 8px;
   display: flex;
   flex-direction: row;
@@ -87,10 +97,12 @@ a:hover {
   align-items: center;
 }
 
-#index-image-container a {
+#pages-preview a {
   text-decoration: none;
-  font-size: 1.125rem;
-  color: black;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 #travel-image, #plants-image, #blogs-image, #computers-image {
@@ -100,6 +112,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  align-content: end;
 }
 
 #travel-image {
@@ -113,8 +126,15 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
-  opacity: 0;
+  opacity: 1;
+  background-color: rgba(173, 255, 126, 0.7);
+  height: 25%;
+  border-radius: 0 0 16px 16px;
+}
+
+#travel-image:hover p, #plants-image:hover p, #blogs-image:hover p, #computers-image:hover p {
+  color: rgb(214, 33, 160);
+  letter-spacing: 3px;
 }
 
 #travel-image:hover {
@@ -123,16 +143,11 @@ a:hover {
 
 #travel-overlay {
   transition: 0.25s ease-in;
-  background-color: rgba(0, 0, 255, 0.5);
-}
-
-#travel-image:hover #travel-overlay {
-  opacity: 1;
 }
 
 #plants-image {
   filter: grayscale(0%);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease-out;
   background-image: url(../images/plants/arrivals.png);
 }
 
@@ -141,16 +156,11 @@ a:hover {
 }
 
 #plants-overlay {
-  transition: 0.25s ease-in;
-  background-color: rgba(0, 0, 255, 0.5);
-}
-
-#plants-image:hover #plants-overlay {
-  opacity: 1;
+  transition: 0.3s ease-out;
 }
 
 #blogs-image {
-  transition: filter 0.3s ease;
+  transition: filter 0.35s linear;
   background-image: url(../images/blogs/blog_1.png);
 }
 
@@ -159,17 +169,11 @@ a:hover {
 }
 
 #blogs-overlay {
-  transition: 0.25s ease-in;
-  background-color: rgba(0, 0, 255, 0.5);
-}
-
-#blogs-image:hover #blogs-overlay {
-  opacity: 1;
+  transition: 0.35s linear;
 }
 
 #computers-image {
   background-image: url(../images/computers/gallery_2.jpg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #computers-image:hover {
@@ -178,16 +182,11 @@ a:hover {
 }
 
 #computers-overlay {
-  transition: 0.25s ease-in;
-  background-color: rgba(0, 0, 255, 0.5);
-}
-
-#computers-image:hover #computers-overlay {
-  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 
 /* footer */
-footer {
+#index-footer {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -195,18 +194,18 @@ footer {
   text-align: center;
 }
 
-summary {
+.footer-summary {
   font-size: 1.625rem;
   color: black;
   list-style: none;
   cursor: pointer;
 }
 
-summary::-webkit-details-marker {
+.footer-summary::-webkit-details-marker {
   display: none;
 }
 
-summary::after {
+.footer-summary::after {
   background: url(../icons/blogs/search.svg) no-repeat center;
   background-size: contain;
   width: 15px;
@@ -216,11 +215,11 @@ summary::after {
   padding-left: 16px;
 }
 
-details[open] summary::after {
+.footer-details[open] .footer-summary::after {
   background: url(../icons/blogs/message.svg) no-repeat center;
 }
 
-.footer-info {
+.footer-links {
   padding: 16px 0px;
   display: flex;
   flex-direction: column;
@@ -228,12 +227,13 @@ details[open] summary::after {
   font-size: 1.25rem;
 }
 
-.footer-info a {
+.footer-links a {
   text-decoration: none;
+  color: rgb(73, 73, 73);
 }
 
-.footer-info a:hover {
-  text-decoration: underline;
+.footer-links a:hover {
+  text-decoration: underline double 2px violet;
   color: black;
 }
 
@@ -259,19 +259,19 @@ details[open] summary::after {
     height: 350px;
   }
 
-  #footer {
+  #index-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 96px;
+    gap: 144px;
   }
 
-  summary {
+  .footer-summary {
     pointer-events: none;
     cursor: default;
   }
 
-  details[open] summary::after {
+  .footer-details[open] .footer-summary::after {
     display: none;
   }
 
