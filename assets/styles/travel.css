@@ -24,35 +24,35 @@ body {
 .social-media-icon {
   width: 36px;
   height: 36px;
+  margin: 0px 18px;
 }
 
-#hero-section, #blog-section, #content-second-container, #sales-section, .footer-text-container,
-#shop-first-container, footer, #info-section-text-container, header, #content-text-container {
+#blog-section, #content-second-container, #sales-section, .footer-text-container,
+#shop-first-container, #info-section-text-container, #travel-header, #content-text-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-#input-container, #blogs-container, #content-section, #hero-icons-container,
-#shop-section, #footer-icons-container, #info-section, nav, ul {
+#hero-section, #blogs-container, #content-section, #shop-section, #info-section, #travel-nav, #travel-footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-header, footer, section {
+#travel-header, #travel-footer, #blog-section, #content-section, #shop-section, #sales-section, #info-section {
   padding: 32px 16px;
 }
 
-nav, #blogs-container, #content-section, #shop-section, #info-section {
+#travel-nav, #blogs-container, #content-section, #shop-section, #info-section {
   justify-content: space-between;
 }
 
-nav, #blog-section, #shop-first-container, #shop-section {
+#blog-section, #shop-first-container, #shop-section {
   align-items: center;
 }
 
-nav, input, .hero-text, #header-button, #content-sideways-text {
+#travel-nav, #input-container input, .hero-text, #header-button, #content-sideways-text {
   letter-spacing: 2px;
 }
 
@@ -60,33 +60,37 @@ nav, input, .hero-text, #header-button, #content-sideways-text {
   border-radius: 16px;
 }
 
-button {
+#header-button, .body-button {
   text-transform: uppercase;
-}
-
-button:hover {
   cursor: pointer;
 }
 
 #hero-section {
   padding: 0;
+  width: 100%;
+  row-gap: 36px;
+  justify-content: center;
+}
+
+#hero-section a {
+  align-content: center;
 }
 
 /* footer */
-footer {
+#travel-footer {
   background: linear-gradient(180deg, rgb(255, 209, 228), rgb(255, 153, 216));
-  align-items: left;
-  row-gap: 24px;
+  row-gap: 32px;
+  justify-content: center;
 }
 
 .footer-text-container {
   gap: 8px;
+  text-align: center;
 }
 
 .footer-divider {
   width: 90%;
   color: #d739ff;
-  height: 2px;
   margin: auto;
 }
 
@@ -99,10 +103,6 @@ footer {
 .footer-text:hover {
   text-decoration: underline;
   color: black;
-}
-
-#footer-icons-container {
-  gap: 36px;
 }
 
 /* sales section */
@@ -154,23 +154,22 @@ footer {
 /* text */
 .text {
   font-size: 1.125rem;
-  color: black;
+  color: #443f3f;
   text-align: justify;
 }
 
 .shop-text {
   font-size: 1.125rem;
-  color: black;
+  color: #443f3f;
 }
 
 .hero-text {
-  padding-top: 64px;
-  width: 66%;
+  width: 100%;
   color: white;
 }
 
 .section-header-text {
-  font-size: 2rem;
+  font-size: 1.85rem;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -241,10 +240,10 @@ footer {
 #content-second-container {
   width: 100%;
   height: 100%;
+  gap: 24px;
 }
 
 #content-text-container {
-  padding: 32px 24px 0px 24px;
   row-gap: 24px;
   justify-content: space-between;
   height: 100%;
@@ -255,6 +254,7 @@ footer {
   font-size: 1.125rem;
   line-height: 1.5;
   text-align: justify;
+  color: #443f3f;
 }
 
 /* blog section */
@@ -290,41 +290,53 @@ footer {
 .blog-text {
   padding: 16px;
   font-size: 1.125rem;
+  color: #443f3f;
 }
 
 /* nav */
-ul {
+#travel-nav {
+  text-transform: uppercase;
+  gap: 16px;
+  justify-content: center;
+}
+
+#travel-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  justify-content: space-around;
+  gap: 16px;
+  align-content: center;
+  width: 100%;
 }
 
-li a {
+#travel-nav li a {
   display: block;
   color: black;
-  padding-right: 0px;
-  padding-left: 16px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
 /* header section */
-header {
+#travel-header {
   background: linear-gradient(rgb(255, 255, 255, 0.1)), url(../images/travel/header.png);
-  row-gap: 96px;
+  row-gap: 48px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-input {
+#input-container input {
   padding: 15px;
-  height: 48px;
   border: none;
   outline: none;
   color: #514b48;
+  width: 100%;
 }
 
 #header-button:hover {
@@ -333,24 +345,18 @@ input {
   letter-spacing: 4px;
 }
 
-#hero-icons-container {
-  padding-top: 64px;
-  justify-content: center;
-  gap: 24px;
-}
-
 #hero-header-text {
-  text-align: right;
-  font-size: 4rem;
+  width: 100%;
+  font-size: 2.95rem;
   color: #514b48;
-  letter-spacing: 32px;
+  letter-spacing: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
 
 #input-container {
   width: 100%;
-  padding-top: 32px;
 }
 
 .input-divider {
@@ -370,6 +376,7 @@ input {
 }
 
 #header-button {
+  width: 100%;
   height: 48px;
   border: none;
   background-color: #ff9226;
@@ -385,24 +392,48 @@ input {
     box-shadow: 16px 16px rgb(176, 255, 169);
   }
 
+  #travel-header {
+    row-gap: 96px;
+  }
+
+  #hero-section {
+    row-gap: 64px;
+  }
+
   .blog-image {
     height: auto;
+  }
+
+  #hero-header-text {
+    font-size: 4.5rem;
+    letter-spacing: 32px;
+  }
+
+  #input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 /* desktop devices */
 @media (min-width: 1024px) {
-  header, #content-section, #sales-section, #shop-section, footer, #blog-section {
+  #travel-header, #content-section, #sales-section, #shop-section, #travel-footer, #blog-section {
     padding: 64px 100px;
+  }
+
+  #travel-nav {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  #travel-nav ul {
+    gap: 36px;
+    justify-content: right;
   }
 
   #info-section {
     padding: 0;
-  }
-
-  footer { 
-    row-gap: 32px;
-    align-items: center;
   }
 
   .footer-text, .shop-text {
@@ -435,9 +466,9 @@ input {
   }
   
   .hero-text {
-    padding-top: 64px;
-    width: 30%;
+    width: 50%;
     color: white;
+    padding-left: 16px;
   }
 
   .text {
@@ -474,23 +505,8 @@ input {
     row-gap: 32px;
   }
 
-  li a {
-    padding-left: 32px;
-  }
-
-  #hero-icons-container {
-    align-items: end;
-    margin-left: 8%;
-    flex-direction: column;
-  }
-
-  #hero-header-text {
-    font-size: 4.5rem;
-    text-align: center;
-  }
-
   #content-text-container { 
-    padding: 48px 24px 0px 24px;
+    padding: 16px 24px 0px 24px;
     row-gap: 32px;
     align-items: start;
     text-align: left;
@@ -513,10 +529,5 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-  }
-
-  .social-media-icon {
-    width: 25px;
-    height: 25px;
   }
 }

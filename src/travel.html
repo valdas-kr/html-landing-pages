@@ -8,29 +8,25 @@
     <link rel="icon" type="image/x-icon" href="../assets/icons/plants/sun_icon.svg">
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="travel-header">
+      <nav id="travel-nav">
         <a href="../index.html">
           <img src="../assets/icons/logos/travel_logo.svg" class="logo" alt="Website logo with an airplane and website name">
         </a>
         <ul>
-          <li><a href="../src/travel.html">TRAVEL</a></li>
-          <li><a href="../src/plants.html">PLANTS</a></li>
-          <li><a href="../src/blogs.html">BLOGS</a></li>
-          <li><a href="../src/computers.html">COMPUTERS</a></li>
+          <li><a href="../src/travel.html">Travel</a></li>
+          <li><a href="../src/plants.html">Plants</a></li>
+          <li><a href="../src/blogs.html">Blogs</a></li>
+          <li><a href="../src/computers.html">Computers</a></li>
         </ul>
       </nav>
-            
-      <section id="hero-section">
+      <div id="hero-section">
         <h1 id="hero-header-text">Travel</h1>
-        <div id="hero-icons-container">
-          <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook icon"></a>
-          <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram icon"></a>
-          <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter icon"></a>
-        </div>
+        <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook icon"></a>
+        <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram icon"></a>
+        <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter icon"></a>
         <p class="hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="input-container">
           <input type="text" id="from-input" name="from" placeholder="From">
@@ -41,11 +37,10 @@
           <hr class="input-divider">
           <input type="date" id="until-input" name="until">
           <hr class="input-divider">
-          <button type="button" id="header-button" onclick="ShowAlert()" name="search"> Search </button>
+          <button type="button" id="header-button" onclick="ShowAlert()" name="search">Search</button>
         </div>  
-      </section>
+      </div>
     </header>
-
     <section id="blog-section">
       <h2 class="section-header-text">Blog section</h2>
       <div id="blogs-container">
@@ -64,7 +59,6 @@
       </div>
       <a href="https://github.com/valdas-kr" class="body-button-container"><button class="body-button">More blogs</button></a>
     </section>
-
     <section id="content-section">
       <div id="content-first-container">
         <img src="../assets/images/travel/content.png" loading="lazy" alt="Tall skyscraper" class="content-image">
@@ -85,7 +79,6 @@
         </div>
       </div>
     </section>
-
     <section id="shop-section">
       <div id="shop-first-container">
         <h5 class="section-header-text">Shop Section</h5>
@@ -103,7 +96,6 @@
         </picture>
       </div>
     </section>
-
     <section id="sales-section">
       <a id="sales-link" href="https://github.com/valdas-kr">
         <img src="../assets/images/travel/sales.png" loading="lazy" alt="Everest" id="sales-image">
@@ -112,7 +104,6 @@
       </div>
       </a>
     </section>
-
     <section id="info-section">
       <img src="../assets/images/travel/final_1.png" loading="lazy" alt="Tall buildings" id="info-image">
       <div id="info-section-text-container">
@@ -124,13 +115,10 @@
         <a href="#"><button class="body-button">More info</button></a>
       </div>
     </section>
-
-    <footer>
-      <div id="footer-icons-container">
-        <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook logo icon"></a>
-        <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram logo icon"></a>
-        <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter logo icon"></a>
-      </div>
+    <footer id="travel-footer">
+      <a href="#"><img src="../assets/icons/social/facebook_2.svg" class="social-media-icon" alt="Facebook logo icon"></a>
+      <a href="#"><img src="../assets/icons/social/instagram_2.svg" class="social-media-icon" alt="Instagram logo icon"></a>
+      <a href="#"><img src="../assets/icons/social/twitter_3.svg" class="social-media-icon" alt="Twitter logo icon"></a>
       <hr class="footer-divider">
       <div class="footer-text-container">
         <a href="https://github.com/valdas-kr" class="footer-text">GitHub</a>
@@ -143,7 +131,6 @@
       <hr class="footer-divider">
       <p class="footer-text">Copyright @Travel</p>
     </footer>
-
     <script src="../assets/scripts/showAlert.js"></script>
     <script src="../assets/scripts/currentDate.js"></script>
   </body>
