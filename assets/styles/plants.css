@@ -26,15 +26,16 @@ body {
   height: 45px;
 }
 
-.care-detailed-info-container, #header-text-container, #tips-section, .footer-first-container, .footer-second-container, #bedroom-text-container, #care-container
-.shop-item, #shop-section, #arrivals-habits, #arrivals-more-info, #arrivals-info, #quote-container, #quote-section {
+.care-detailed-info, #header-text-container, #tips-section, .footer-left-container, .footer-right-container, #bedroom-text-container, 
+#care-container, .shop-item, #shop-section, #arrivals-habits, #arrivals-more-info, #arrivals-info, #quote-container, #quote-section,
+#shop-items-container, .shop-item-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-#care-info-container, #header-icons, #plants-nav, ul, #care-section, #care-header-img-container, footer,
-#bedroom-section, #bedroom-img-container, .shop-item-text-container, #shop-subheader-container, .arrivals-row {
+#plant-care-info, #header-icons, #plants-nav, ul, #care-section, #care-image-container, #plants-footer,
+#bedroom-section, #bedroom-images, #shop-button-container, .arrivals-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -50,7 +51,7 @@ body {
   background-position: center;
 }
 
-#plants-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer, #care-section {
+#plants-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #plants-footer, #care-section {
   padding: 32px 16px;
 }
 
@@ -70,7 +71,7 @@ body {
   font-size: 1.125rem;
 }
 
-#header-big-text {
+#hero-header-text {
   font-size: 3.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -146,7 +147,7 @@ body {
   padding-top: 18px; 
 }
 
-#tips-big-text {
+#tips-header-text {
   color: azure;
   font-size: 3rem; 
 }
@@ -167,9 +168,9 @@ body {
   width: 100%;
 }
 
-#quote-text {
+#quote-header {
   color: rgb(238, 238, 238);
-  font-size: 4rem;
+  font-size: 3.75rem;
   text-align: left;
 }
 
@@ -206,10 +207,11 @@ body {
   justify-content: space-between;
 }
 
-#arrivals-title-text {
+#arrivals-header-text {
   font-size: 2.375rem; 
   font-weight: 700;
   color: black;
+  text-transform: uppercase;
 }
 
 #arrivals-big-text {
@@ -258,32 +260,36 @@ body {
   background-color: rgb(235, 255, 255);
 }
 
-#shop-header-small-text {
+#shop-medium-text {
   font-size: 2.25rem;
 }
 
-#shop-header-large-text {
-  font-size: 4rem; 
+#shop-header-text {
+  font-size: 3rem; 
   color: green;
 }
 
-#shop-subheader-container {
+#shop-button-container {
   justify-content: space-between;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   align-items: center;
+  gap: 16px;
+}
+
+#shop-button-container a, #shop-button-container a button {
+  width: 100%;
 }
 
 #shop-items-container {
-  display: none;
-  justify-content: space-around;
   column-gap: 16px;
   row-gap: 16px;
   padding-top: 16px;
+  align-content: center;
 }
 
 .shop-item {
-  width: 40%;
-  height: 220px;
+  width: 80%;
+  height: 130px;
   border: 1px solid rgb(187, 54, 54);
   border-radius: 16px;
   background-color: #a6ffe9;
@@ -296,22 +302,20 @@ body {
   padding: 24px;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.shop-item-img {
-  width: 100%;
+.shop-item-image {
+  width: 90px;
   border-radius: 16px;
-  height: 165px;
-}
-
-.shop-item-text-container {
-  justify-content: space-between;
+  height: 100%;
 }
 
 .shop-item-text {
-  font-size: 1.125rem;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 1.375rem;
 }
 
 /* care section */
@@ -325,22 +329,23 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 500;
+  line-height: 0.9;
 }
 
 #care-container {
   width: 100%;
 }
 
-#care-header-img-container {
+#care-image-container {
   justify-content: center;
 }
 
-#care-img {
-  height: 400px;
-  width: 80%;
+#care-image {
+  height: 340px;
+  width: 100%;
 }
 
-#care-info-container {
+#plant-care-info {
   justify-content: space-between;
 }
 
@@ -350,19 +355,19 @@ body {
   text-align: center;
 }
 
-.care-detailed-info-container {
-  width: 30%;
+.care-detailed-info {
+  width: 32%;
   align-items: center;
   text-align: center;
+  gap: 12px;
 }
 
-.care-detailed-info-header {
+.detailed-info-header {
+  text-transform: uppercase;
   font-size: 1.125rem;
-  padding-top: 4px;
 }
 
-.care-detailed-info-text {
-  padding-top: 12px;
+.detailed-info-text {
   font-size: 1rem;
 }
 
@@ -376,28 +381,28 @@ body {
   width: 100%;
 }
 
-#bedroom-img-container {
+#bedroom-images {
   width: 100%;
   justify-content: end;
 }
 
-#bedroom-big-text {
+#bedroom-header-text {
   font-size: 4.5rem;
 }
 
-#bedroom-small-text {
+#bedroom-text {
   font-size: 1.5rem;
   padding-top: 24px;
 }
 
-#bedroom-first-image-container {
+#first-image-container {
   width: 35%;
   padding-top: 5%;
   z-index: 2;
   display: none;
 }
 
-#bedroom-second-image-container {
+#second-image-container {
   width: 30%;
   padding-top: 30%;
   margin-left: -130px;
@@ -405,39 +410,38 @@ body {
   display: none;
 }
 
-#bedroom-third-image-container {
+#third-image-container {
   width: 100%;
   z-index: 3;
 }
 
-#bedroom-third-img {
+#bedroom-third-image {
   height: 100%;
 }
 
-#bedroom-first-img, #bedroom-third-img {
+#bedroom-first-image, #bedroom-third-image {
   width: 100%;
   border-radius: 16px;
 }
 
-#bedroom-second-img {
+#bedroom-second-image {
   width: 200%;
   height: 90%;
   border-radius: 16px;
 }
 
 /* footer */
-footer {
+#plants-footer {
   background-color: black;
-  row-gap: 24px;
   justify-content: space-between;
 }
 
-.footer-first-container {
+.footer-left-container {
   text-align: left;
   width: 49%;
 }
 
-.footer-second-container {
+.footer-right-container {
   text-align: right;
   width: 49%;
 }
@@ -474,7 +478,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  #header-big-text {
+  #hero-header-text {
     font-size: 4.875rem;
   }
 
@@ -490,7 +494,7 @@ footer {
     font-size: 1.75rem;
   }
 
-  #tips-big-text {
+  #tips-header-text {
     font-size: 3.25rem; 
   }
 
@@ -502,25 +506,89 @@ footer {
     width: 70%;
   }
 
-  #quote-text {
+  #quote-header {
     font-size: 5rem;
   }
 
+  #care-section {
+    padding: 0px 16px 32px 16px;
+  }
+
+  #care-header-text {
+    padding-top: 42%;
+    font-size: 4.875rem;
+    width: 40%;
+    text-align: left;
+    line-height: 1;
+  }
+  
+  #care-container {
+    width: 58%;
+  }
+
+  #care-image {
+    height: 500px;
+  }
+  
+  #care-image-container {
+    justify-content: end;
+  }
+
+  .care-detailed-info {
+    width: 33%;
+  }
+
+  #shop-button-container a, #shop-button-container a button {
+    width: auto;
+  }
+
   #shop-items-container {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 200px;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+
+  .shop-item-inner {
+    flex-direction: column;
+  }
+
+  .shop-item-image {
+    width: 100%;
+    height: 250px;
   }
 
   .shop-item {
-    width: 25%;
+    box-shadow: 11px 15px #70ffdb;
+    width: 31%;
+    height: 350px;
+  }
+
+  #shop-medium-text {
+    font-size: 2.625rem;
+  }
+
+  #shop-header-text {
+    font-size: 5rem;
+  }
+
+  #shop-button-container {
+    padding-top: 32px;
+    font-size: 1.375rem;
+  }
+
+  .shop-item-text {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #third-image-container {
+    height: 425px;
   }
 }
 
 /* desktop devices */
 @media (min-width: 1024px) {
-  #plants-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section,  #arrivals-section, footer {
+  #plants-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section,  #arrivals-section, #plants-footer {
     padding: 32px 100px;
   }
 
@@ -529,43 +597,12 @@ footer {
     transform: translateY(1px);
   }
 
-  #shop-items-container {
-    justify-content: space-around;
-    column-gap: 16px;
-    padding-top: 32px;
-  }
-
-  .shop-item {
-    width: 27%;
-    box-shadow: 11px 15px #70ffdb;
-    width: 29%;
-    height: 325px;
-  }
-
   #shop-section {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  #shop-header-small-text {
-    font-size: 2,625rem;
-  }
-
-  #shop-header-large-text {
-    font-size: 5rem;
-  }
-
-  #shop-subheader-container {
-    padding-top: 32px;
-    font-size: 1.25rem;
-  }
-
-  .shop-item-img {
-    width: 100%;
-    height: 250px;
-  }
-
-  .care-detailed-info-container {
+  .care-detailed-info {
     width: 30%;
   }
 
@@ -573,11 +610,11 @@ footer {
     font-size: 1.5rem;
   }
 
-  #bedroom-first-image-container {
+  #first-image-container {
     display: block;
   }
 
-  #bedroom-second-image-container {
+  #second-image-container {
     display: block;
   }
 
@@ -589,50 +626,31 @@ footer {
     width: 39%;
   }
 
-  #bedroom-img-container {
+  #bedroom-images {
     width: 59%;
   }
 
-  #bedroom-third-image-container {
+  #third-image-container {
     width: 50%;
     padding-top: 75%;
+    height: auto;
   }
   
-  #bedroom-first-img, #bedroom-third-img {
+  #bedroom-first-image, #bedroom-third-image {
     width: 80%;
   }
 
   #care-section {
-    padding-bottom: 32px;
-    padding-left: 100px;
-    padding-top: 0px;
-    padding-right: 0px;
+    padding: 0px 16px 32px 100px;
   }
 
   #care-header-text {
-    padding-top: 35%;
-    font-size: 4.875rem;
-    width: 40%;
-    text-align: left;
+    padding-top: 36%;
+    line-height: 1.1;
+    font-size: 5rem;
   }
 
-  #care-info-container {
-    padding-right: 32px;
-  }
-  
-  #care-container {
-    width: 58%;
-  }
-
-  #care-img {
-    height: 500px;
-  }
-  
-  #care-header-img-container {
-    justify-content: end;
-  }
-
-  .care-detailed-info-container {
-    width: 33%;
+  #care-image {
+    width: 80%;
   }
 }
