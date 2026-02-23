@@ -271,6 +271,13 @@ body {
   text-align: center;
 }
 
+#computers-nav {
+  letter-spacing: 2px;
+  justify-content: center;
+  letter-spacing: 4px;
+  gap: 16px;
+}
+
 #computers-nav ul {
   list-style: none;
   margin: 0;
@@ -290,11 +297,9 @@ body {
   text-decoration: none;
 }
 
-#computers-nav {
-  letter-spacing: 2px;
-  justify-content: center;
-  letter-spacing: 4px;
-  gap: 16px;
+#computers-nav ul li a:hover {
+  color: whitesmoke;
+  text-decoration: underline 2px rgb(42, 165, 97);
 }
 
 #hero-text-container {
@@ -323,8 +328,6 @@ body {
 
 /* quote section */
 #quote-section {
-  text-align: center;
-  gap: 32px;
   background: #e6ffe7;
 }
 
@@ -334,17 +337,12 @@ body {
   color: #42474a;
 }
 
-#qualities-section, #gallery-section, #staff-section {
+#qualities-section, #gallery-section, #staff-section, #quote-section {
   gap: 24px;
   text-align: center;
 }
 
 /* qualities section */
-#qualities-section {
-  text-align: center;
-  gap: 16px;
-}
-
 .qualities-image-container {
   height: 100px; 
   width: 100px; 
@@ -361,6 +359,7 @@ body {
 @media (min-width: 768px) {
   .hero-header-text {
     font-size: 3rem;
+    letter-spacing: 3px;
   }
 
   .hero-text {

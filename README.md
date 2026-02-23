@@ -1,10 +1,10 @@
-# Html landing pages
+# Html Landing Pages
 
 This project contains several web pages, written in ***HTML***, ***CSS*** and ***JavaScript***.
 
 All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected in page design, colors and style. All pages are optimised for different devices and screen sizes.
 
-# Assets used
+# Assets Used
 
 This project uses various logos, pictures and icons:
 

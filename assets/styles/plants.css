@@ -341,7 +341,6 @@ body {
 
 #care-image {
   height: 340px;
-  width: 100%;
 }
 
 #plant-care-info {
@@ -386,7 +385,7 @@ body {
 }
 
 #bedroom-header-text {
-  font-size: 4.5rem;
+  font-size: 4.375rem;
 }
 
 #bedroom-text {
@@ -412,13 +411,10 @@ body {
 #third-image-container {
   width: 100%;
   z-index: 3;
+  text-align: center;
 }
 
-#bedroom-third-image {
-  height: 100%;
-}
-
-#bedroom-first-image, #bedroom-third-image {
+#bedroom-first-image {
   width: 100%;
   border-radius: 16px;
 }
@@ -427,6 +423,13 @@ body {
   width: 200%;
   height: 90%;
   border-radius: 16px;
+}
+
+#bedroom-third-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  max-height: 425px;
 }
 
 /* footer */
@@ -457,6 +460,47 @@ body {
 }
 
 /* tablet devices */
+@media (min-width: 435px) {
+   #header-text-container {
+    padding-top: 24px;
+    width: 100%;
+    row-gap: 24px;
+  }
+
+  #header-small-text {
+    font-size: 1.375rem;
+  }
+
+  #hero-header-text {
+    font-size: 4.75rem;
+  }
+
+  #header-medium-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 565px) {
+#header-text-container {
+    padding-top: 36px;
+    width: 100%;
+    row-gap: 24px;
+  }
+
+  #header-small-text {
+    font-size: 1.5rem;
+  }
+
+  #hero-header-text {
+    font-size: 4.875rem;
+    width: 60%;
+  }
+
+  #header-medium-text {
+    font-size: 2.625rem;
+  }
+}
+
 @media (min-width: 768px) {
   #plants-nav {
     flex-wrap: nowrap;
@@ -470,19 +514,6 @@ body {
   #header-text-container {
     padding-top: 48px;
     width: 50%;
-    row-gap: 24px;
-  }
-
-  #header-small-text {
-    font-size: 1.5rem;
-  }
-
-  #hero-header-text {
-    font-size: 4.875rem;
-  }
-
-  #header-medium-text {
-    font-size: 2.625rem;
   }
 
   #tips-container {
@@ -592,7 +623,7 @@ body {
   }
 
   #arrivals-info {
-    top: -116%;
+    top: -105%;
     transform: translateY(1px);
   }
 
@@ -647,9 +678,5 @@ body {
     padding-top: 36%;
     line-height: 1.1;
     font-size: 5rem;
-  }
-
-  #care-image {
-    width: 80%;
   }
 }
